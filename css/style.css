@@ -13,7 +13,7 @@ body {
 	font-size: 16px;
 	line-height: 1.5;
 	color: var(--x-black);
-	background: url("../files/site-pre-03.jpg") center top no-repeat,var(--x-light-beige);
+	background: url("../img/head.jpg") center top no-repeat,white;
 }
 .container {
 	max-width: 928px;
