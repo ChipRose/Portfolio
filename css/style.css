@@ -1,6 +1,8 @@
 :root {
 	--x-black: #222222;
-	--x-white: #f2f4f6;
+	--x-dark-blue:#1C4078;
+	--x-light-beige: #fffbe8;
+
 	--x-blue: #288be6;
 }
 /* -------common styles-------- */
@@ -11,7 +13,7 @@ body {
 	font-size: 16px;
 	line-height: 1.5;
 	color: var(--x-black);
-	background: url("../img/hero-bg.jpg") top center no-repeat, var(--x-white);
+	background: url("../files/site-pre-03.jpg") center top no-repeat,var(--x-light-beige);
 }
 .container {
 	max-width: 928px;
@@ -31,14 +33,10 @@ body {
 .page-header {
 	margin: 0 0 160px;
 	padding: 32px 0 32px;
-}
-.page-header .container,
-.page-footer .container {
-	max-width: 1408px;
 	text-align: right;
 }
 .page-header a {
-	color: var(--x-blue);
+	color: var(--x-dark);
 	text-decoration: none;
 	background-repeat: no-repeat;
 	background-position: left;
@@ -62,9 +60,9 @@ body {
 .heading {
 	font-family: "Jost", "Verdana", sans-serif;
 	text-transform: uppercase;
-	color: var(--x-blue);
-	font-size: 88px;
-	line-height: 96px;
+	color: var(--x-dark-blue);
+	font-size: 50px;
+	line-height: 1.5;
 	font-weight: 400;
 	margin: 0 0 16px;
 }
@@ -74,23 +72,30 @@ body {
 	line-height: 1.5;
 }
 .intro {
-	margin: 0 0 120px;
+	margin: 0 0 90px;
 }
+.rezume{
+	display: flex;
+}
+.my-photo{
+	width: 200px;
+	height: 200px;
+border-radius: 10%;
+border: 3px solid white;
 
+
+}
 .subheading {
-	margin: 0 0 56px;
-	font-family: "Old Standard TT", "Times", "Times New Roman", serif;
-	font-size: 64px;
-	line-height: 80px;
+	font-size: 50px;
+	line-height: 1.5;
 	font-weight: 400;
 	text-align: center;
+	margin: 0 0 30px;
 }
-
 .user-image {
 	margin: 0 0 32px;
 	text-align: center;
 }
-
 .intro h3,
 .portfolio h3 {
 	margin: 0 0 12px;
