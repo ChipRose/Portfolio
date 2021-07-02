@@ -2,8 +2,9 @@
 <html lang="ru">
 	<head>
 		<meta charset="UTF-8" />
-		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic" rel="stylesheet">
-		<link rel="stylesheet" href="css/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">		<link rel="stylesheet" href="css/style.css" />
 		<title>Портфолио Junior верстальщика</title>
 	</head>
 	<body>
@@ -20,23 +21,33 @@
 					<p>Junior верстальщик</p>
 				</section>
 				<section class="intro">
-					<h2 class="subheading">Резюме</h2>
-					<figure>
+					<h2 class="text-clear subheading">Резюме</h2>
+					<figure class="figure-clear">
 						<img src="files/iam.jpg"  width="928" height="536" alt="Моя фотография">
 					</figure>
-					<h3>Пара слов о себе</h3>
-					<p>
-						Образование высшее, бакалавр, инженер, магистр. Закончила Технологический институт Южного федерального университета (Таганрог) в 2010 году. Специальность: Оптические системы связи и
-						локации.
-					</p>
-					<p>С 2020 года увлекаюсь вёрсткой страниц сайтов. В 2021 прошла обучение на курсах "HTML Academy"</p>
-					<p>Интересы и хобби. Играю в большой теннис. Работаю помощником тренера в клубе Play Теннис с 2007 года.</p>
+					<div>
+						<h3>Пара слов о себе</h3>
+						<p>
+							Образование высшее, бакалавр, инженер, магистр. Закончила Технологический институт Южного федерального университета (Таганрог) в 2010 году. Специальность: Оптические системы связи и
+							локации.
+						</p>
+						<p>С 2020 года увлекаюсь вёрсткой страниц сайтов. В 2021 прошла обучение на курсах "HTML Academy". Принимала участие в марафонах по вёрстке и "Кибер Битве-2021"</p>
+						<p><i>Интересы и хобби.</i> Играю в большой теннис. Работаю помощником тренера в клубе Play Теннис с 2007 года.</p>
+					</div>
+				<div class="skills">
 					<h3>Основные навыки</h3>
-					<p>
-						Вёрстка страниц сайтов в редакторе VS Code (html, scc, scss). Работа в программах Figma, Adobe Photoshop (ретуширование фотографий, создание макетов), Corel Draw (создание векторных
-						изображений, макетирование). Знание программ пакета Office. Начальные знания Adobe InDesign. Работа с офисной техникой (распечатка, сканирование, настройка). Уровень владения компьютером:
-						Продвинутый пользователь.
-					</p>
+					<dl class="skills-list">
+						<dt class="skill-html">HTML</dt>
+						<dd class="level"><div style="width: 60%;">60%</div></dd>
+						<dt class="skill-css">CSS</dt>
+						<dd class="level"><div style="width: 70%;">70%</div></dd>
+						<p>
+							Вёрстка страниц сайтов в редакторе VS Code. Работа в программах Figma, Adobe Photoshop (ретуширование фотографий, создание макетов), Corel Draw (создание векторных
+							изображений, макетирование). Знание программ пакета Office. Начальные знания Adobe InDesign. Работа с офисной техникой (распечатка, сканирование, настройка). Уровень владения компьютером:
+							Продвинутый пользователь.
+						</p>
+					</dl>
+				</div>
 				</section>
 				<section class="portfolio">
 					<h2 class="subheading">Мои работы</h2>

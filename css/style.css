@@ -1,23 +1,33 @@
-:root{
-	
+:root {
+	--x-black: #222222;
+	--x-white: #f2f4f6;
+	--x-blue: #288be6;
 }
+/* -------common styles-------- */
 body {
 	margin: 0;
 	min-width: 960px;
-	font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+	font-family: "Jost", "Helvetica", "Arial", sans-serif;
 	font-size: 16px;
-	line-height: 32px;
-	color: #222222;
-	background-color: #f2f4f6;
-	background-image: url("../img/hero-bg.jpg");
-	background-repeat: no-repeat;
-	background-position: top center;
+	line-height: 1.5;
+	color: var(--x-black);
+	background: url("../img/hero-bg.jpg") top center no-repeat, var(--x-white);
 }
 .container {
 	max-width: 928px;
 	margin: 0 auto;
 	padding: 0 16px;
 }
+/* -------clear styles------- */
+.figure-clear {
+	margin: 0;
+	padding: 0;
+}
+.text-clear{
+	margin: 0;
+	padding: 0;
+}
+/* -------header------- */
 .page-header {
 	margin: 0 0 160px;
 	padding: 32px 0 32px;
@@ -28,11 +38,11 @@ body {
 	text-align: right;
 }
 .page-header a {
-	margin-left: 56px;
-	color: #288be6;
+	color: var(--x-blue);
 	text-decoration: none;
 	background-repeat: no-repeat;
 	background-position: left;
+	margin-left: 56px;
 }
 .header-email {
 	padding-left: 30px;
@@ -50,20 +60,23 @@ body {
 	text-align: center;
 }
 .heading {
-	margin: 0 0 16px;
-	font-family: "Old Standard TT", "Times", "Times New Roman", serif;
+	font-family: "Jost", "Verdana", sans-serif;
+	text-transform: uppercase;
+	color: var(--x-blue);
 	font-size: 88px;
 	line-height: 96px;
 	font-weight: 400;
+	margin: 0 0 16px;
 }
 .hero-image p {
 	margin: 0;
 	font-size: 32px;
-	line-height: 48px;
+	line-height: 1.5;
 }
 .intro {
 	margin: 0 0 120px;
 }
+
 .subheading {
 	margin: 0 0 56px;
 	font-family: "Old Standard TT", "Times", "Times New Roman", serif;
@@ -163,12 +176,11 @@ body {
 .page-footer {
 	padding: 40px 0;
 	background-color: #00417d;
-	color: #ffffff;
 }
 
 .page-footer a {
 	margin-left: 56px;
-	color: inherit;
+	color: #ffffff;
 	text-decoration: none;
 	background-repeat: no-repeat;
 	background-position: left;
