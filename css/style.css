@@ -1,5 +1,6 @@
 :root {
 	--x-black: rgb(0, 0, 0);
+	--x-transparent-black:rgb(0,0,0,0.5);
 	--x-dark-blue: rgb(28, 64, 120);
 	--x-transperent-dark-blue: rgb(28, 64, 120, 0.5);
 	--x-blue: rgb(40, 139, 230);
@@ -164,7 +165,7 @@ padding: 0 0 0 80px ;
 	height: 8px;
 	font-size: 0;
 	background: var(--x-white);
-	border: 1px solid var(--x-blue);
+	border: 1px solid var(--x-transparent-black);
 	border-radius: 4px;
 	box-shadow: 0 0 10px -3px var(--x-dark-blue);
 	margin: 4px 0 16px;
