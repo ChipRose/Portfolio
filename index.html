@@ -4,7 +4,8 @@
 		<meta charset="UTF-8" />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">		<link rel="stylesheet" href="css/style.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css" />
 		<title>Портфолио Junior верстальщика</title>
 	</head>
 	<body>
@@ -15,59 +16,119 @@
 			</div>
 		</header>
 		<main>
-			<div class="container"> 
+			<div class="container">
 				<section class="hero-image">
-					<h1 class="heading">Розова Яна Сергеевна</h1>
-					<p>Junior верстальщик</p>
+					<h1 class="text-clear heading">
+						<span class="text-clear main-title">Портфолио</span>
+						<span class="text-clear main-title-name">Розова Яна Сергеевна</span>
+					</h1>
+					<p class="text-clear profession">Junior верстальщик</p>
 				</section>
 				<section class="intro">
 					<h2 class="text-clear subheading">Резюме</h2>
+					<h3 class="text-clear sub-title">Обо мне</h3>
 					<div class="rezume">
-						<figure class="figure-clear">
-							<img class="my-photo" src="files/iam4.jpg"  width="200" height="200" alt="Моя фотография">
+						<figure class="figure-clear my-photo-container">
+							<img class="my-photo" src="files/iam4.jpg" width="150" height="150" alt="Моя фотография" />
 						</figure>
 						<div>
-							<h3>Пара слов о себе</h3>
 							<p>
-								Образование высшее, бакалавр, инженер, магистр. Закончила Технологический институт Южного федерального университета (Таганрог) в 2010 году. Специальность: Оптические системы связи и
+								<i>Образование высшее, бакалавр, инженер, магистр.</i> Закончила Технологический институт Южного федерального университета (Таганрог) в 2010 году. <br> Специальность: Оптические системы связи и
 								локации.
 							</p>
 							<p>С 2020 года увлекаюсь вёрсткой страниц сайтов. В 2021 прошла обучение на курсах "HTML Academy". Принимала участие в марафонах по вёрстке и "Кибер Битве-2021"</p>
-							<p><i>Интересы и хобби.</i> Играю в большой теннис. Работаю помощником тренера в клубе Play Теннис с 2007 года.</p>
+							<p>Играю в большой теннис. Работаю помощником тренера в клубе Play Теннис с 2007 года.</p>
 						</div>
 					</div>
-				<div class="skills">
-					<h3>Основные навыки</h3>
-					<dl class="skills-list">
-						<dt class="skill-html">HTML</dt>
-						<dd class="level"><div style="width: 60%;">60%</div></dd>
-						<dt class="skill-css">CSS</dt>
-						<dd class="level"><div style="width: 70%;">70%</div></dd>
+					<div class="skills">
+						<h3 class="text-clear sub-title">Основные навыки</h3>
+						<dl class="list-clear skills-list">
+							<dt class="skill-html">HTML</dt>
+							<dd class="level"><div style="width: 60%">60%</div></dd>
+							<dt class="skill-css">CSS</dt>
+							<dd class="level"><div style="width: 70%">70%</div></dd>
+							<dt class="skill-js">JS</dt>
+							<dd class="level"><div style="width: 20%">20%</div></dd>
+						</dl>
 						<p>
-							Вёрстка страниц сайтов в редакторе VS Code. Работа в программах Figma, Adobe Photoshop (ретуширование фотографий, создание макетов), Corel Draw (создание векторных
-							изображений, макетирование). Знание программ пакета Office. Начальные знания Adobe InDesign. Работа с офисной техникой (распечатка, сканирование, настройка). Уровень владения компьютером:
-							Продвинутый пользователь.
+							Вёрстка страниц сайтов в редакторе VS Code. Работа в программах Figma, Adobe Photoshop (ретуширование фотографий, создание макетов), Corel Draw (создание векторных изображений,
+							макетирование). Знание программ пакета Office. Начальные знания Adobe InDesign. Работа с офисной техникой (распечатка, сканирование, настройка). <br>Уровень владения компьютером: Продвинутый
+							пользователь.
 						</p>
-					</dl>
-				</div>
+					</div>
 				</section>
 				<section class="portfolio">
-					<h2 class="subheading">Мои работы</h2>
-					<figure class="figure-clear project-image">
-						<img src="files/site-pre-03.jpg" width="928" height="718" alt="Cайт магазина строительных материалов">
-					</figure>
-					<h3>Интернет-магазин "Техномарт"</h3>
-					<p>Сайт сделан в результате обучения в HTML Academy</p>
-					<a class="button" href="https://chiprose.github.io/1753747-technomart-31/">Открыть страницу</a>
-					<h3>Блог начинающего верстальщика</h3>
-					<p>Статический блог про обучение HTML и CSS.</p>
+					<h2 class="text-clear subheading">Мои работы</h2>
+					<div class="slider">
+						<input class="visually-hidden first-bullet" type="radio" name="slider-bullet" id="first-slide" checked />
+						<input class="visually-hidden second-bullet" type="radio" name="slider-bullet" id="second-slide" />
+						<input class="visually-hidden third-bullet" type="radio" name="slider-bullet" id="third-slide" />
+						<div class="slider-controls">
+							<label class="slide-bullet first-label" tabindex="0" for="first-slide">
+								<span class="visually-hidden">1 слайд: Сайт для магазина Техномарт</span>
+							</label>
+							<label class="slide-bullet second-label" tabindex="0" for="second-slide">
+								<span class="visually-hidden">2 слайд: Сайт для теннисного клуба</span>
+							</label>
+							<label class="slide-bullet third-label" tabindex="0" for="third-slide">
+								<span class="visually-hidden">3 слайд: Сайт Портфолио</span>
+							</label>
+						</div>
+						<div class="slider-img first-slide">
+							<img class="img" src="files/site-pre-03.jpg" width="620" height="450" alt="Демонстрация сайта Техномарт" />
+							<div class="text-container">
+								<h3 class="text-clear sub-title">Сайт для интернет-магазина &laquo;Техномарт&raquo;</h3>
+								<p class="text-clear slider-description">
+									Реализован в процессе обучения на курсе профессиональной вёрстки в <a class="link-clear" href="https://htmlacademy.ru/courses">HTML Academy</a>
+								</p>
+								<p class="text-clear slider-description">
+									Использованы Grid, Flex. Проходит проверку переполнения контентом. Имеет модальные окна, слайдеры, работающие на js и css. Реализована доступность для скринридеров.
+								</p>
+							</div>
+							<a class="link-clear button" target="_blank" href="https://chiprose.github.io/1753747-technomart-31/">Открыть сайт</a>
+						</div>
+						<div class="slider-img second-slide">
+							<img class="img" src="files/site-pre-02.jpg" width="620" height="450" alt="Демонстрация сайта PlayТЕННИС" />
+							<div class="text-container">
+								<h3 class="text-clear sub-title">Сайт для теннисного клуба &laquo;Play ТЕННИС&raquo;</h3>
+								<p class="text-clear slider-description">Реализован по собственному проекту.</p>
+								<p class="text-clear slider-description">Адаптивен для разных устройств. Использовыны Flex. Имеет меню-бургер, слайдер с фотогалереей, спойлеры, табы.</p>
+							</div>
+							<a class="link-clear button" target="_blank" href="https://chiprose.github.io/PlayTennis/">Открыть сайт</a>
+						</div>
+						<div class="slider-img third-slide">
+							<img class="img" src="files/site-pre-01.jpg" width="620" height="450" alt="Демонстрация сайта Портфолио" />
+							<div class="text-container">
+								<h3 class="text-clear sub-title">Сайт &laquo;Портфолио&raquo;</h3>
+								<p class="text-clear slider-description">Реализован по собственному проекту</p>
+								<p class="text-clear slider-description">
+									Адаптивен для разных устройств. Использовыны Flex. Имеет меню-бургер, слайдер с фотогалереей, спойлеры, табы. Постоянно модерируется, так как нет предела совершенству.
+								</p>
+							</div>
+							<a class="link-clear button" target="_blank" href="https://chiprose.github.io/Portfolio_WebDesigner/">Открыть сайт</a>
+						</div>
+						<button class="button-clear button-slider button-prev" type="button">
+							<svg aria-hidden="true" focusable="false" width="23" height="41" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M20.83.97l2.09 2.1L5.13 20.94l17.85 17.94-2.1 2.1L.96 20.95 20.83.97z" fill="white" />
+							</svg>
+							<span class="visually-hidden">Перейти на предыдущий слайд</span>
+						</button>
+						<button class="button-clear button-slider button-next" type="button">
+							<svg aria-hidden="true" focusable="false" width="22" height="40" viewBox="0 0 22 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M2.07562 39.0585L0.0774441 37.0107L17.093 19.5639L0.021965 2.06243L2.0211 0.0146294L21.0894 19.5639L2.07562 39.0585Z" fill="white" />
+							</svg>
+							<span class="visually-hidden">Перейти на следующий слайд</span>
+						</button>
+					</div>
+					<h3 class="text-clear sub-title">Блог начинающего верстальщика</h3>
+					<p>Начинать всегда трудно, ибо нет ничего неприятнее, чем пустая страница.</p>
 				</section>
 			</div>
 		</main>
 		<footer class="page-footer">
 			<div class="container">
-				<a class="footer-email" href="mailto:yana.rozova@mail.ru">yana.rozova@mail.ru</a>
-				<a class="footer-phone" href="tel:+79604608234">+7 960 460 8 234</a>
+				<a class="link-clear footer-email" href="mailto:yana.rozova@mail.ru">yana.rozova@mail.ru</a>
+				<a class="link-clear  footer-phone" href="tel:+79604608234">+7 960 460 8 234</a>
 			</div>
 		</footer>
 	</body>
