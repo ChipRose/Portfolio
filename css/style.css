@@ -248,6 +248,7 @@ h6 {
   text-transform: uppercase;
 }
 .section-title-name {
+	border: 2px solid var(--cl-brd-section-subtitle);
   background: var(--cl-bg-section-subtitle);
   color: var(--cl-white);
   padding: 0 10px;
@@ -266,7 +267,6 @@ h6 {
   color: var(--cl-txt-section-title);
   text-align: center;
   text-transform: uppercase;
-  font-weight: 700;
   letter-spacing: 1.4px;
 }
 .skills {
@@ -291,6 +291,9 @@ h6 {
 }
 .rezume .section-title {
   margin-bottom: 20px;
+}
+.rezume{
+	margin-bottom: 20px;
 }
 /* -------skills------- */
 .skills-list {
@@ -340,10 +343,15 @@ h6 {
   font-size: var(--fz-portfolio-title);
   line-height: var(--lh-portfolio-title);
   text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
 }
 /* portfolio margin */
 .portfolio {
   margin-bottom: 100px;
+}
+.portfolio .portfolio-title{
+	margin-bottom: 10px;
 }
 /* -------slider------- */
 .slider {
@@ -465,14 +473,6 @@ h6 {
 .page-footer a:hover,
 .text-link:hover {
   text-decoration: underline;
-}
-.footer-email {
-  padding-left: 30px;
-  background: url("../img/icon-email-footer.svg") left center no-repeat;
-}
-.footer-phone {
-  padding-left: 25px;
-  background: url("../img/icon-phone-footer.svg") left center no-repeat;
 }
 /* helpful classes */
 .visually-hidden {
