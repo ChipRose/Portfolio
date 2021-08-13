@@ -372,6 +372,15 @@ h6 {
 .portfolio .portfolio-title{
 	margin-bottom: 10px;
 }
+.text-link{
+	position: relative;
+	z-index: 5;
+	color: inherit;
+	border-bottom: 1px dashed var(--cl-black);
+}
+.text-link:hover{
+	border-color: var(--cl-bg-slider-active-bullet);
+}
 /* -------slider------- */
 .slider {
   display: grid;
@@ -482,11 +491,10 @@ h6 {
   justify-content: space-between;
   padding: 40px 0;
 }
-.page-footer a {
+.footer-link {
   color: var(--x-white);
 }
-.page-footer a:hover,
-.text-link:hover {
+.footer-link:hover {
   text-decoration: underline;
 }
 /* helpful classes */
