@@ -50,6 +50,7 @@ a,
 a:visited {
   text-decoration: none;
   cursor: pointer;
+	color: inherit;
 }
 a:hover {
   text-decoration: none;
@@ -75,6 +76,7 @@ h6 {
 /* -------colors variable------- */
 :root {
   --cl-black: rgb(0, 0, 0);
+	--cl-bg-button-up: rgb(40, 139, 230);
   --cl-shd-header-text: rgb(0, 0, 0, 0.5);
   --cl-brd-header-hover: rgb(126, 191, 195);
   --cl-txt-header-title: rgb(126, 191, 195);
@@ -117,6 +119,7 @@ h6 {
 }
 /* -------common styles-------- */
 .body-page {
+	position: relative;
   display: flex;
   flex-direction: column;
   min-width: 960px;
@@ -132,6 +135,23 @@ h6 {
 }
 .main {
   flex: 1 1 auto;
+}
+/* -------button UP------- */
+.button-up{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	bottom: 10px;
+	right:10px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	background: var(--cl-bg-button-up);
+}
+.button-up-text{
+	color: var(--cl-white);
+	font-weight: 700;
 }
 /* -------header------- */
 .header {
