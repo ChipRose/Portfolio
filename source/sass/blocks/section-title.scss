@@ -1,0 +1,6 @@
+//===Section title===
+
+.section-title {
+  @include set-font-style(var(--fz-section-title), var(--lh-section-title));
+  @include uppercase;
+}

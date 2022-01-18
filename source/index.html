@@ -18,7 +18,7 @@
 <body class="page__body">
   <header class="header page__header">
     <h1 class="title main-title header__title">Резюме</h1>
-    <nav class="navigation navigation--nojs navigation--opened header__menu">
+    <nav class="navigation navigation--nojs navigation--closed header__menu">
       <button class="button navigation__toggle header__burger" type="button" aria-expanded="false"
         aria-controls="navigation__list">
         <span class="visually-hidden">Открыть меню </span>
@@ -33,36 +33,36 @@
       </ul>
     </nav>
   </header>
-  <main class="page__main">
-    <article class="about">
+  <main class="main page__main">
+    <article class="about main__about">
       <div class="container">
         <header class="about__header">
           <div class="about__image-block">
             <picture>
-              <img class="img about__img" src="img/iam.jpg" srcset="img/img/iam@2x.jpg 2x" width="92" height="92"
+              <img class="img" src="img/iam.jpg" srcset="img/img/iam@2x.jpg 2x" width="92" height="92"
                 alt="Розова Яна Сергеевна" />
             </picture>
           </div>
-          <div class="about__text-block">
+          <div class="about__title-block">
             <h2 class="title section-title about__title">Розова Яна Сергеевна</h2>
           </div>
         </header>
         <section class="about__content">
-          <h3 class="title section-subtitle">Обо мне</h3>
-          <p class="text main-text about__text">
+          <h3 class="title section-subtitle about__subtitle">Обо мне</h3>
+          <p class="text  about__text">
             <em>Образование высшее, бакалавр, инженер, магистр.</em> Закончила &laquo;Технологический институт
             Южного федерального университета&raquo; (Таганрог) в&nbsp;2010&nbsp;году.
           </p>
-          <p class="text main-text about__text">
+          <p class="text  about__text">
             <em> Специальность:</em> Оптические системы связи и&nbsp;локации.
           </p>
-          <p class="text main-text about__text">
+          <p class="text  about__text">
             С&nbsp;2020&nbsp;года увлекаюсь разработкой сайтов. В&nbsp;2021&nbsp;году прошла обучение на курсе
             &laquo;Профессиональная вёрстка
             сайтов&raquo; в&nbsp;&laquo;HTML&nbsp;Academy&raquo;. Принимала участие в&nbsp;марафонах по&nbsp;вёрстке
             и&nbsp;&laquo;Кибер Битве-2021&raquo;.
           </p>
-          <p class="text main-text about__text">
+          <p class="text  about__text">
             <em>Прохожу обучение </em> в&nbsp;&laquo;HTML&nbsp;Academy&raquo; по&nbsp;профессии
             &laquo;Фронтенд-разработчик&raquo; в&nbsp;асинхронном формате.
           </p>
@@ -139,22 +139,22 @@
             <p class="text technology__name">photoshop</p>
           </li>
         </ul>
-        <p class="text main-text skills__text">
+        <p class="text  skills__text">
           Разработка сайтов в&nbsp;VS Code (HTML, CSS, SCSS, JS), адаптивная, семантичная вёрстка по БЭМ, использование
           svg-графики.
         </p>
-        <p class="text main-text skills__text">
+        <p class="text  skills__text">
           Работа в&nbsp;Figma, Adobe Photoshop (ретуширование фотографий, создание макетов), Corel Draw (создание
           векторных изображений, макетирование), Adobe InDesign, Adobe Illustrator.
         </p>
-        <p class="text main-text skills__text">
+        <p class="text  skills__text">
           Знание программ пакета Office. Работа с&nbsp;офисной техникой (распечатка, сканирование, настройка). Работа
           на&nbsp;оборудовании интерьерной и&nbsp;полиграфической печати.
         </p>
-        <p class="text main-text skills__text">
+        <p class="text  skills__text">
           <em>Уровень владения компьютером: </em> продвинутый пользователь.
         </p>
-        <p class="text main-text skills__text">
+        <p class="text  skills__text">
           <em>Уровень владения английским:</em> pre-intermediate.
         </p>
       </div>
@@ -207,11 +207,11 @@
                 <h4 class="title subtitle">Сайт для интернет-магазина <span class="project-name">&laquo;Cat
                     energy&raquo;</span>
                 </h4>
-                <p class="text main-text slider__text">
+                <p class="text  slider__text">
                   Реализован в&nbsp;процессе обучения на&nbsp;курсе адаптивной вёрстки и автоматизации в&nbsp;<a
                     href="https://htmlacademy.ru/" class="text-link" title="Сайт HTML Academy">HTML&nbsp;Academy</a>
                 </p>
-                <p class="text main-text slider__text">Адаптивен для разных устройств, адаптивная и оптимизированная
+                <p class="text  slider__text">Адаптивен для разных устройств, адаптивная и оптимизированная
                   графика. Использованы Flex, Grid, препроцессор SCSS, сборщик Gulp. Имеет меню-бургер, слайдер. </p>
                 <a class="button button button-preview" target="_blank" href="https://chiprose.github.io/Cat-energy/"
                   title="Просмотреть опубликованный сайт">Открыть сайт</a>
@@ -228,11 +228,11 @@
               <div class="slide__text-block">
                 <h4 class="title subtitle">Сайт для интернет-магазина <span
                     class="project-name">&laquo;Техномарт&raquo;</span> </h4>
-                <p class="text main-text slider__text">
+                <p class="text  slider__text">
                   Реализован в&nbsp;процессе обучения на&nbsp;курсе профессиональной вёрстки в&nbsp;<a
                     href="https://htmlacademy.ru/" class="text-link" title="Сайт HTML Academy">HTML&nbsp;Academy</a>
                 </p>
-                <p class="text main-text slider__text">
+                <p class="text  slider__text">
                   Использованы Grid, Flex. Проходит проверку переполнения контентом. Имеет модальные окна, слайдеры,
                   работающие на&nbsp;JS&nbsp;и&nbsp;CSS. Реализована доступность
                   для&nbsp;скринридеров.
@@ -252,8 +252,8 @@
               <div class="slide__text-block">
                 <h4 class="title subtitle">Сайт для теннисного клуба <span class="project-name">&laquo;Play
                     ТЕННИС&raquo;</span> </h4>
-                <p class="text main-text slider__text">Реализован по собственному проекту.</p>
-                <p class="text main-text slider__text">Адаптивен для разных устройств. Использованы Flex. Имеет
+                <p class="text  slider__text">Реализован по собственному проекту.</p>
+                <p class="text  slider__text">Адаптивен для разных устройств. Использованы Flex. Имеет
                   меню-бургер, слайдер с
                   фотогалереей, спойлеры, табы.</p>
                 <a class="button button button-preview" target="_blank" href="https://chiprose.github.io/PlayTennis/"
@@ -282,6 +282,7 @@
       </a>
     </div>
   </footer>
+  <script src="js/burger.js"></script>
 </body>
 
 </html>

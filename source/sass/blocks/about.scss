@@ -1,0 +1,41 @@
+// ===Article about===
+
+// Header
+
+.about__header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+// Image block
+
+.about__image-block {
+  flex: 0 0 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+// Title block
+
+.about__title-block {
+  margin-left: 20px;
+}
+
+// Subtitle
+
+.about__subtitle {
+  margin-bottom: 5px;
+}
+
+// Text
+.about__text{
+  margin-bottom: 5px;
+
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
