@@ -1,0 +1,22 @@
+// ===Page===
+
+.page {
+  width: 100%;
+  height: 100%;
+}
+
+// ---Body---
+
+.page__body {
+  padding-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  min-width: $mobile-width;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  background-color: var(--cl-bg-page);
+
+  @include set-font-style(var(--fz-main), var(--lh-main));
+  color: var(--cl-txt-main);
+}

@@ -4,5 +4,17 @@
 @import "global/font-size.scss";
 @import "global/color.scss";
 @import "global/mixin.scss";
+//Clear style
+@import "blocks/title.scss";
+@import "blocks/list.scss";
+@import "blocks/button.scss";
+@import "blocks/link.scss";
+@import "blocks/img.scss";
 //Add block
 @import "global/visually-hidden.scss";
+//Blocks
+@import "blocks/page.scss";
+@import "blocks/container.scss";
+@import "blocks/header.scss";
+@import "blocks/main-title.scss";
+@import "blocks/navigation.scss";

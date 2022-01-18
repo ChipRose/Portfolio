@@ -6,9 +6,9 @@
   <title>Портфолио фронтенд-разработчика</title>
   <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml" />
   <link rel="icon" href="favicon.ico" />
-  <meta name="description" content="Портфолио фронтенд-разработчика">
+  <meta name="description" content="Портфолио Розова ЯС">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="css/style.min.css" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
   <link rel="preload" href="fonts/Jost-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/Jost-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
   <link rel="preload" href="fonts/Jost-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -17,23 +17,21 @@
 
 <body class="page__body">
   <header class="header page__header">
-    <div class="container">
-      <h1 class="title main-title header__title">Резюме</h1>
-      <nav class="navigation navigation--nojs navigation--closed header__menu">
-        <button class="navigation__toggle header__burger" type="button" aria-expanded="false"
-          aria-controls="navigation__list">
-          <span class="visually-hidden">Открыть меню </span>
-        </button>
-        <ul class="list navigation__list" id="navigation__list">
-          <li class="navigation__item">
-            <a class="link navigation__link" href="#skills">Основные навыки</a>
-          </li>
-          <li class="navigation__item">
-            <a class="link navigation__link" href="#portfolio">Портфолио</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <h1 class="title main-title header__title">Резюме</h1>
+    <nav class="navigation navigation--nojs navigation--opened header__menu">
+      <button class="button navigation__toggle header__burger" type="button" aria-expanded="false"
+        aria-controls="navigation__list">
+        <span class="visually-hidden">Открыть меню </span>
+      </button>
+      <ul class="list navigation__list" id="navigation__list">
+        <li class="navigation__item">
+          <a class="link navigation__link" href="#skills">Основные навыки</a>
+        </li>
+        <li class="navigation__item">
+          <a class="link navigation__link" href="#portfolio">Портфолио</a>
+        </li>
+      </ul>
+    </nav>
   </header>
   <main class="page__main">
     <article class="about">
@@ -142,7 +140,7 @@
           </li>
         </ul>
         <p class="text main-text skills__text">
-          Разработка сайтов в&nbsp;VS Code (HTML, CSS, SCSS, JS), адаптивная, семантичная вёрстка, использование
+          Разработка сайтов в&nbsp;VS Code (HTML, CSS, SCSS, JS), адаптивная, семантичная вёрстка по БЭМ, использование
           svg-графики.
         </p>
         <p class="text main-text skills__text">
@@ -196,7 +194,29 @@
               </label>
             </div>
           </div>
-          <ul class="slider__list">
+          <ul class="list slider__list">
+            <li class="slider__item">
+              <div class="slider__image-block">
+                <picture>
+                  <img class="img slider__img" src="img/portfolio/site-pre-03-cat.png"
+                    srcset="img/portfolio/site-pre-03-cat@2x.png 2x" width="280" height="186"
+                    alt="Демонстрация сайта Cat Energy" />
+                </picture>
+              </div>
+              <div class="slide__text-block">
+                <h4 class="title subtitle">Сайт для интернет-магазина <span class="project-name">&laquo;Cat
+                    energy&raquo;</span>
+                </h4>
+                <p class="text main-text slider__text">
+                  Реализован в&nbsp;процессе обучения на&nbsp;курсе адаптивной вёрстки и автоматизации в&nbsp;<a
+                    href="https://htmlacademy.ru/" class="text-link" title="Сайт HTML Academy">HTML&nbsp;Academy</a>
+                </p>
+                <p class="text main-text slider__text">Адаптивен для разных устройств, адаптивная и оптимизированная
+                  графика. Использованы Flex, Grid, препроцессор SCSS, сборщик Gulp. Имеет меню-бургер, слайдер. </p>
+                <a class="button button button-preview" target="_blank" href="https://chiprose.github.io/Cat-energy/"
+                  title="Просмотреть опубликованный сайт">Открыть сайт</a>
+              </div>
+            </li>
             <li class="slider__item">
               <div class="slider__image-block">
                 <picture>
@@ -206,7 +226,8 @@
                 </picture>
               </div>
               <div class="slide__text-block">
-                <h4 class="tltle subtitle">Сайт для интернет-магазина &laquo;Техномарт&raquo;</h4>
+                <h4 class="title subtitle">Сайт для интернет-магазина <span
+                    class="project-name">&laquo;Техномарт&raquo;</span> </h4>
                 <p class="text main-text slider__text">
                   Реализован в&nbsp;процессе обучения на&nbsp;курсе профессиональной вёрстки в&nbsp;<a
                     href="https://htmlacademy.ru/" class="text-link" title="Сайт HTML Academy">HTML&nbsp;Academy</a>
@@ -229,7 +250,8 @@
                 </picture>
               </div>
               <div class="slide__text-block">
-                <h4 class="tltle subtitle">Сайт для теннисного клуба &laquo;Play ТЕННИС&raquo;</h4>
+                <h4 class="title subtitle">Сайт для теннисного клуба <span class="project-name">&laquo;Play
+                    ТЕННИС&raquo;</span> </h4>
                 <p class="text main-text slider__text">Реализован по собственному проекту.</p>
                 <p class="text main-text slider__text">Адаптивен для разных устройств. Использованы Flex. Имеет
                   меню-бургер, слайдер с
@@ -238,27 +260,7 @@
                   title="Просмотреть опубликованный сайт">Открыть сайт</a>
               </div>
             </li>
-            </li>
-            <li class="slider__item">
-              <div class="slider__image-block">
-                <picture>
-                  <img class="img slider__img" src="img/portfolio/site-pre-02-playtennis.png"
-                    srcset="img/portfolio/site-pre-02-playtennis.png 2x" width="280" height="186"
-                    alt="Демонстрация сайта Cat Energy" />
-                </picture>
-              </div>
-              <div class="slide__text-block">
-                <h4 class="tltle subtitle">Сайт для интернет-магазина &laquo;cat energy&raquo;</h4>
-                <p class="text main-text slider__text">
-                  Реализован в&nbsp;процессе обучения на&nbsp;курсе адаптивной вёрстки и автоматизации в&nbsp;<a
-                    href="https://htmlacademy.ru/" class="text-link" title="Сайт HTML Academy">HTML&nbsp;Academy</a>
-                </p>
-                <p class="text main-text slider__text">Адаптивен для разных устройств, адаптивная и оптимизированная
-                  графика. Использованы Flex, Grid, препроцессор SCSS, сборщик Gulp. Имеет меню-бургер, слайдер. </p>
-                <a class="button button button-preview" target="_blank" href="https://chiprose.github.io/Cat-energy/"
-                  title="Просмотреть опубликованный сайт">Открыть сайт</a>
-              </div>
-            </li>
+
           </ul>
         </div>
       </div>
@@ -266,13 +268,20 @@
   </main>
   <footer class="page__footer">
     <div class="container">
-      <a class="link footer__link" href="https://github.com/ChipRose"
-        title="Посмотреть работы на GitHub">GitHub</a>
-      <a class="link footer__link" href="tel:+79604608234" title="Позвонить Frontend-разработчику">+7 960 460 8
-        234</a>
+      <a class="link footer__link" href="https://github.com/ChipRose" title="Посмотреть работы на GitHub">
+        <svg class="icon footer__icon" width="20" height="20" role="img" aria-label="Иконка Github" focusable="false">
+          <use xlink:href="img/sprite.svg#github-icon"></use>
+        </svg>
+        GitHub
+      </a>
+      <a class="link footer__link" href="tel:+79604608234" title="Позвонить Frontend-разработчику">
+        <svg class="icon footer__icon" width="20" height="20" role="img" aria-label="Иконка Github" focusable="false">
+          <use xlink:href="img/sprite.svg#phone-icon"></use>
+        </svg>
+        +7 960 460 8 234
+      </a>
     </div>
   </footer>
-  <script src="js/script.js"></script>
 </body>
 
 </html>

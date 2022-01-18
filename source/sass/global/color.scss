@@ -1,78 +1,20 @@
 // global
 
 :root {
-  --cl-bg-page: rgb(255, 255, 255);
-  --cl-txt-title: rgb(0, 0, 0);
-  --cl-txt-subtitle: rgb(34, 34, 34);
-  --cl-txt-main: rgb(68, 68, 68);
-  --cl-bg-burger: rgb(0, 0, 0);
+  --cl-bg-main: rgb(255, 255, 255);
+  --cl-bg-relate: rgb(230, 230, 230);
+  --cl-bg-contrast: rgb(0, 0, 0);
+  --cl-bg-burger: rgb(140, 140, 140);
   --cl-bg-menu: rgb(255, 255, 255);
-  --cl-txt-menu: rgb(0, 0, 0);
-  --cl-brd-menu-link: rgb(104, 183, 56);
-  --cl-bg-main-button: rgb(104, 183, 56);
-  --cl-bg-main-button-hover: rgb(94, 170, 47);
-  --cl-txt-main-button: rgb(255, 255, 255);
-  --cl-txt-main-button-active: rgba(255, 255, 255, 0.3);
-  --cl-brd-main-frame: rgb(230, 230, 230);
-  --cl-brd-header-inner: rgb(217, 217, 217);
-  --cl-bg-footer-address: rgb(255, 255, 255);
-  --cl-bg-footer-address-inner: rgb(242, 242, 242);
-  --cl-brd-footer: rgb(217, 217, 217);
+  --cl-bg-button: rgb(52, 168, 219);
+  --cl-bg-button-hover: rgba(52, 168, 219, 0.3);
+  --cl-bg-button-active: rgba(52, 168, 219, 0.3);
+  --cl-txt-main: rgb(68, 68, 68);
+  --cl-txt-main-contrast: rgb(255, 255, 255);
+  --cl-txt-button: rgb(255, 255, 255);
+  --cl-txt-button-active: rgba(255, 255, 255, 0.3);
+  --cl-shd: rgba(0, 0, 0, 0.15);
   --cl-fill-footer-icon: rgb(102, 102, 102);
   --cl-fill-footer-icon-hover: rgb(104, 183, 56);
-  --cl-bg-title-decor: rgb(104, 183, 56);
-
-  // index.html
-
-  --cl-txt-menu-desktop-index: rgb(255, 255, 255);
-  --cl-brd-menu-desktop-index: rgb(255, 255, 255);
-  --cl-txt-cover-mobile-index: rgb(255, 255, 255);
-  --cl-txt-cover-index: rgb(0, 0, 0);
-  --cl-bg-cover-index: rgba(104, 183, 56, 0.85);
-  --cl-bg-program-card: rgb(242, 242, 242);
-  --cl-brd-program-card: rgb(217, 217, 217);
-  --cl-bg-program-image: rgb(104, 183, 56);
-  --cl-txt-program-button: rgb(0, 0, 0);
-  --cl-bg-advantages-image: rgb(104, 183, 56);
-  --cl-txt-advantages-number: rgb(242, 242, 242);
-  --cl-bg-example: rgb(234, 234, 234);
-  --cl-brd-example: rgb(205, 205, 205);
-  --cl-txt-example-progress: rgb(0, 0, 0);
-  --cl-bg-example-description: rgb(255, 255, 255);
-  --cl-txt-example-button: rgb(0, 0, 0);
-  --cl-brd-example-button: rgb(0, 0, 0, 0.4);
-  --cl-bg-slider-scale-mobile: rgb(255, 255, 255);
-  --cl-bg-slider-scale: rgb(220, 220, 220);
-  --cl-brd-slider-scale: rgb(205, 205, 205);
-  --cl-bg-slider-cursor: rgb(255, 255, 255);
-  --cl-bg-slider-inner-cursor: rgb(104, 183, 56);
-  --cl-brd-slider-cursor: rgb(205, 205, 205);
-  --cl-brd-slider-cursor-active: rgb(104, 183, 56);
-  --cl-brd-slider-button: rgba(0, 0, 0, 0.3);
-  --cl-shd-slider-cursor: rgb(0, 0, 0, 0.16);
-
-  // catalog.html
-
-  --cl-txt-catalog-legend: rgb(0, 0, 0);
-  --cl-bg-catalog-card: rgb(242, 242, 242);
-  --cl-brd-catalog: rgb(205, 205, 205);
-  --cl-txt-catalog-promo: rgb(255, 255, 255);
-  --cl-bg-catalog-promo: rgb(104, 183, 56);
-  --cl-txt-catalog-button-all: rgb(68, 68, 68);
-  --cl-txt-catalog-button-all-active: rgba(68, 68, 68, 0.3);
-  --cl-bg-catalog-button-all: rgb(242, 242, 242);
-  --cl-bg-catalog-button-all-hover-active: rgb(235, 235, 235);
-
-  // form.html
-
-  --cl-txt-form-legend: rgb(0, 0, 0);
-  --cl-brd-form: rgb(217, 217, 217);
-  --cl-brd-form-box: rgb(205, 205, 205);
-  --cl-brd-form-box-inner: rgb(104, 183, 56);
-  --cl-brd-form-box-hover: rgb(186, 186, 186);
-  --cl-brd-form-input-hover: rgb(186, 186, 186);
-  --cl-brd-form-input-active: rgb(68, 68, 68);
-  --cl-fill-form-icon: rgb(34, 34, 34);
-  --cl-fill-form-icon-focus: rgb(104, 183, 56);
-  --cl-brd-form-error: rgb(255, 130, 130);
+  --cl-bg-decor: rgb(253, 216, 60);
 }

@@ -1,30 +1,12 @@
-@mixin set-font-style ($font-size, $line-height, $font-family:"Arial", $font-weight: 400) {
+@mixin set-font-style ($font-size, $line-height, $font-family:"Jost", $font-weight: 400) {
   font-family: $font-family, "Arial", sans-serif;
   font-size: $font-size;
   line-height: $line-height;
   font-weight: $font-weight;
 }
 
-@mixin border-bottom ($color, $left: 0, $right: 0) {
-  content: "";
-  box-sizing: border-box;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: $right;
-  left: $left;
-  border-bottom: 1px solid $color;
-}
-
-@mixin border-top ($color, $left: 0, $right: 0) {
-  content: "";
-  box-sizing: border-box;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: $right;
-  left: $left;
-  border-top: 1px solid $color;
+@mixin uppercase {
+  text-transform: uppercase;
 }
 
 @mixin absolute-center {
