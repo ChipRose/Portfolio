@@ -1,0 +1,44 @@
+// Slider
+
+// .slider__item {
+//   display: none;
+// }
+
+// Bullet block
+
+.slider__bullet-block {
+  display: flex;
+  justify-content: center;
+  margin-left: -3px;
+  margin-right: -3px;
+}
+
+// Bullet
+
+.slider__label {
+  display: block;
+  margin-left: 3px;
+  margin-right: 3px;
+  width: 20px;
+  height: 2px;
+  background-color: var(--cl-bg-bullet);
+}
+
+// Bullet checked
+
+.slider__bullet:checked + .slider__label {
+  display: block;
+  margin-left: 3px;
+  margin-right: 3px;
+  width: 20px;
+  height: 2px;
+  background-color: var(--cl-bg-bullet-current);
+}
+
+// Slide checked
+
+.slider__bullet:checked ~ .slider__list  {
+  background-color: red;
+}
+
+// Hidden

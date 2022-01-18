@@ -101,8 +101,8 @@
 
 .navigation--nojs .navigation__list {
   @media (max-width: $mobile-width-only) {
-    margin-top: 30px;
     display: block;
+    margin-top: 30px;
     position: static;
     min-height: 0;
   }

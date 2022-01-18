@@ -1,0 +1,41 @@
+// ===Skills===
+
+//Subtile
+
+.skills__subtitle {
+  margin-bottom: 5px;
+}
+
+// List
+
+.skills__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: -10px;
+  margin-right: -10px;
+
+  @include set-font-style(var(--fz-skills-item), var(--lh-skills-item));
+  @include uppercase;
+}
+
+.skills__item {
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+// Text
+
+.skills__text{
+  margin-bottom: 5px;
+
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
