@@ -9,6 +9,10 @@
   <meta name="description" content="Портфолио Розова ЯС">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
   <link rel="preload" href="fonts/Jost-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/Jost-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
   <link rel="preload" href="fonts/Jost-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -163,43 +167,15 @@
         <a id="portfolio"></a>
         <h2 class="visually-hidden">Портфолио</h2>
         <h3 class="title section-subtitle">Примеры работ</h3>
-        <div class="slider">
-          <div class="slider-buttons slider__buttons">
-            <button class="button slider-button slider-button--prew" type="button">
-              <svg class="icon skills__icon" width="23" height="41" role="img"
-                aria-label="Кнопка: перейти на предыдущий слайд" focusable="false">
-                <use xlink:href="img/sprite.svg#arrow-prew"></use>
-              </svg>
-              <span class="visually-hidden">Перейти на предыдущий слайд</span>
-            </button>
-            <button class="button slider-button slider-button--next" type="button">
-              <svg class="icon skills__icon" width="23" height="41" role="img"
-                aria-label="Кнопка: перейти на следующий слайд" focusable="false">
-                <use xlink:href="img/sprite.svg#arrow-next"></use>
-              </svg>
-              <span class="visually-hidden">Перейти на следующий слайд</span>
-            </button>
-          </div>
-          <div class="slider__bullet-block">
-            <input class="slider__bullet visually-hidden" id="first-slide" type="radio" name="bullet" checked>
-            <label class="slider__label" for="first-slide">
-              <span class="visually-hidden">Первый слайд</span>
-            </label>
-            <input class="slider__bullet visually-hidden" id="second-slide" type="radio" name="bullet">
-            <label class="slider__label" for="second-slide">
-              <span class="visually-hidden">Второй слайд</span>
-            </label>
-            <input class="slider__bullet visually-hidden" id="third-slide" type="radio" name="bullet">
-            <label class="slider__label" for="third-slide">
-              <span class="visually-hidden">Третий слайд</span>
-            </label>
-          </div>
-          <ul class="list slider__list">
-            <li class="slider__item">
+        <div class="slider swiper">
+          <ul class="list slider__content swiper-wrapper portfolio__slider">
+            <li class="slider__item swiper-slide">
               <div class="slider__image-block">
                 <picture>
-                  <img class="img slider__img" src="img/portfolio/site-pre-03-cat.png"
-                    srcset="img/portfolio/site-pre-03-cat@2x.png 2x" width="280" height="186"
+                  <source media="(min-width:768px)"
+                    srcset="img/portfolio/site-pre-cat-tablet.png 1x, img/portfolio/site-pre-cat-tablet@2x.png 2x">
+                  <img class="img slider__img" src="img/portfolio/site-pre-cat.png"
+                    srcset="img/portfolio/site-pre-cat@2x.png 2x" width="280" height="186"
                     alt="Демонстрация сайта Cat Energy" />
                 </picture>
               </div>
@@ -217,11 +193,13 @@
                   title="Просмотреть опубликованный сайт">Открыть сайт</a>
               </div>
             </li>
-            <li class="slider__item">
+            <li class="slider__item swiper-slide">
               <div class="slider__image-block">
                 <picture>
-                  <img class="img slider__img" src="img/portfolio/site-pre-01-technomart.png"
-                    srcset="img/portfolio/site-pre-01-technomart@2x.png 2x" width="280" height="186"
+                  <source media="(min-width:768px)"
+                    srcset="img/portfolio/site-pre-technomart-tablet.png 1x, img/portfolio/site-pre-technomart-tablet@2x.png 2x">
+                  <img class="img slider__img" src="img/portfolio/site-pre-technomart.png"
+                    srcset="img/portfolio/site-pre-technomart@2x.png 2x" width="280" height="186"
                     alt="Демонстрация сайта Техномарт" />
                 </picture>
               </div>
@@ -241,11 +219,13 @@
                   title="Просмотреть опубликованный сайт">Открыть сайт</a>
               </div>
             </li>
-            <li class="slider__item">
+            <li class="slider__item swiper-slide">
               <div class="slider__image-block">
                 <picture>
-                  <img class="img slider__img" src="img/portfolio/site-pre-02-playtennis.png"
-                    srcset="img/portfolio/site-pre-02-playtennis.png 2x" width="280" height="186"
+                  <source media="(min-width:768px)"
+                    srcset="img/portfolio/site-pre-playtennis-tablet.png 1x, img/portfolio/site-pre-playtennis-tablet@2x.png 2x">
+                  <img class="img slider__img" src="img/portfolio/site-pre-playtennis.png"
+                    srcset="img/portfolio/site-pre-playtennis.png 2x" width="280" height="186"
                     alt="Демонстрация сайта Play ТЕННИС" />
                 </picture>
               </div>
@@ -260,6 +240,10 @@
                   title="Просмотреть опубликованный сайт">Открыть сайт</a>
               </div>
             </li>
+          </ul>
+          <button class="button slider__button slider__button--prev" type="button"></button>
+          <button class="button slider__button slider__button--next" type="button"></button>
+          <ul class="slider__bullets">
           </ul>
         </div>
       </div>
@@ -282,6 +266,8 @@
     </div>
   </footer>
   <script src="js/burger.js"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="js/slider-settings.js"></script>
 </body>
 
 </html>
