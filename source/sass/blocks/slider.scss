@@ -1,7 +1,16 @@
 // Slider
 .slider {
+  //min-width: 0;
+ // max-width: 100%;
+}
+
+.slider__content {
   min-width: 0;
-  max-width:280px;
+  width: 280px;
+}
+
+.slider__item {
+  overflow: hidden;
 }
 
 // Hidden

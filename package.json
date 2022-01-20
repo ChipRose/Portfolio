@@ -7,6 +7,8 @@
     "autoprefixer": "10.2.5",
     "browser-sync": "2.26.14",
     "del": "^6.0.0",
+    "eslint": "7.18.0",
+    "eslint-config-htmlacademy": "2.0.0",
     "gulp": "4.0.2",
     "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^7.1.0",
@@ -23,10 +25,11 @@
     "stylelint": "13.12.0",
     "stylelint-config-htmlacademy": "0.1.4"
   },
+  "license": "MIT",
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
-    "test": "npm run editorconfig && npm run stylelint",
+    "test": "npm run editorconfig && npm run stylelint && eslint js/",
     "build": "gulp styles",
     "start": "gulp"
   },
@@ -45,5 +48,8 @@
   ],
   "engines": {
     "node": "14.15.0"
+  },
+  "dependencies": {
+    "swiper": "^7.4.1"
   }
 }

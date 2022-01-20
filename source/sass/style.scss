@@ -14,8 +14,8 @@
 //Add block
 @import "global/visually-hidden.scss";
 //Slider
-@import "blocks/swiper.scss";
-@import "blocks/slick-theme.scss";
+@import "../../node_modules/swiper/swiper.scss";
+@import "../../node_modules/swiper/swiper-vars.scss";
 //Blocks
 @import "blocks/page.scss";
 @import "blocks/container.scss";
