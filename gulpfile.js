@@ -1,78 +1,41 @@
-const gulp = require("gulp");
-const plumber = require("gulp-plumber");
-const sourcemap = require("gulp-sourcemaps");
-const sass = require("gulp-sass");
-const postcss = require("gulp-postcss");
-const autoprefixer = require("autoprefixer");
-const csso = require("postcss-csso");
-const rename = require("gulp-rename");
-const htmlmin = require("gulp-htmlmin");
-const terser = require("gulp-terser");
-const imagemin = require("gulp-imagemin");
-const webp = require("gulp-webp");
-const svgstore = require("gulp-svgstore");
-const del = require("del");
-const sync = require("browser-sync").create();
+//Gulp import
+import gulp from "gulp";
+//Path import
+import { path } from "./gulp/config/path.js";
+//Plugins import
+import { plugins } from "./gulp/config/plugins.js";
 
-// Sprite
-
-const sprite = () => {
-  return gulp.src("source/img/icons/*.svg")
-    .pipe(svgstore({
-      inlineSvg: true
-    }))
-    .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("source/img"))
+//Global variable
+global.app = {
+  path: path,
+  gulp: gulp,
+  plugins: plugins,
 }
 
-exports.sprite = sprite;
+import { copy } from "./gulp/tasks/copy.js";
+import { reset } from "./gulp/tasks/reset.js";
+import { html } from "./gulp/tasks/html.js";
+import { server } from "./gulp/tasks/server.js";
+import { scss } from "./gulp/tasks/scss.js";
+import { images } from "./gulp/tasks/images.js";
+import { sprite } from "./gulp/tasks/sprite.js";
+import { js } from "./gulp/tasks/js.js";
 
-// Styles
-
-const styles = () => {
-  return gulp.src("source/sass/style.scss")
-    .pipe(plumber())
-    .pipe(sourcemap.init())
-    .pipe(sass())
-    .pipe(postcss([
-      autoprefixer()
-    ]))
-    .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("source/css"))
-    .pipe(sync.stream());
-}
-
-exports.styles = styles;
-
-// Server
-
-const server = (done) => {
-  sync.init({
-    server: {
-      baseDir: 'source'
-    },
-    cors: true,
-    notify: false,
-    ui: false,
-  });
-  done();
-}
-
-exports.server = server;
-
-// Watcher
-
+//Watcher
 const watcher = () => {
-  gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
-  gulp.watch("source/*.html").on("change", sync.reload);
+  gulp.watch(path.watch.files, copy);
+  gulp.watch(path.watch.html, html);
+  gulp.watch(path.watch.scss, scss);
+  gulp.watch(path.watch.images, images);
+  gulp.watch(path.watch.sprite, sprite);
+  gulp.watch(path.watch.js, js);
 }
 
-exports.default = gulp.series(
-  gulp.parallel(
-    styles,
-    sprite
-  ),
-  gulp.series(
-    server, watcher
-  )
-);
+//Script
+
+const mainTasks = gulp.parallel(copy, html, scss, images, sprite, js);
+
+//Result
+
+const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));
+gulp.task("default", dev);
