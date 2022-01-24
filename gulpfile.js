@@ -18,6 +18,7 @@ import { html } from "./gulp/tasks/html.js";
 import { server } from "./gulp/tasks/server.js";
 import { scss } from "./gulp/tasks/scss.js";
 import { images } from "./gulp/tasks/images.js";
+import { createWebp } from "./gulp/tasks/webp.js";
 import { sprite } from "./gulp/tasks/sprite.js";
 import { js } from "./gulp/tasks/js.js";
 
@@ -27,13 +28,12 @@ const watcher = () => {
   gulp.watch(path.watch.html, html);
   gulp.watch(path.watch.scss, scss);
   gulp.watch(path.watch.images, images);
-  gulp.watch(path.watch.sprite, sprite);
   gulp.watch(path.watch.js, js);
 }
 
 //Script
 
-const mainTasks = gulp.parallel(copy, html, scss, images, sprite, js);
+const mainTasks = gulp.parallel(copy, html, scss, images, createWebp, sprite, js);
 
 //Result
 
