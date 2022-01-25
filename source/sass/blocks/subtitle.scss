@@ -1,0 +1,6 @@
+// Subtitle
+
+.subtitle {
+  @include set-font-style(var(--fz-subtitle), var(--lh-subtitle));
+  @include uppercase;
+}

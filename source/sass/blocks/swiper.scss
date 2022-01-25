@@ -1,1 +1,13 @@
+// Pagination
 
+.swiper-pagination > .swiper-pagination-bullet {
+  width: 20px;
+  height: 2px;
+  background-color: var(--cl-bg-bullet);
+}
+
+.swiper-pagination > .swiper-pagination-bullet-active {
+  width: 20px;
+  height: 2px;
+  background-color: var(--cl-bg-bullet-current);
+}

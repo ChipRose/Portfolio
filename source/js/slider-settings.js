@@ -1,18 +1,31 @@
-// core version + navigation, pagination modules:
-import Swiper, { Navigation, Pagination, Controller } from 'swiper';
+import Swiper, { Navigation, Pagination, Controller } from "swiper";
 
 Swiper.use([Navigation, Pagination, Controller]);
 
-const sliderImage = new Swiper(".slider-image", {
-  loop: true,
-  nested:true,
-});
+const mainSliderSelector = ".slider__image-block";
+const navSliderSelector = ".slider__description-block";
 
-const sliderDescription = new Swiper(".slider-description", {
-  loop:true,
-  controller: {
-    control: sliderImage,
+const mainSliderOptions = {
+  navigation: {
+    nextButton: ".swiper-button-next",
+    prevButton: ".swiper-button-prev",
   },
-});
-sliderImage.controller.control = sliderDescription;
-sliderDescription.controller.control = sliderImage;
+  pagination: {
+    el: ".swiper-pagination",
+    type: "bullets",
+    clickable:true,
+  },
+  loop:true,
+};
+
+const mainSlider = new Swiper(mainSliderSelector, mainSliderOptions);
+
+const navSliderOptions = {
+  loop:true,
+};
+
+const navSlider = new Swiper(navSliderSelector, navSliderOptions);
+
+mainSlider.controller.control = navSlider;
+navSlider.controller.control = mainSlider;
+

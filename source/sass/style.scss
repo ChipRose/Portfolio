@@ -14,20 +14,23 @@
 //Add block
 @import "global/visually-hidden.scss";
 //Slider
+@import "blocks/slider.scss";
+@import "blocks/swiper.scss";
 @import "../../node_modules/swiper/swiper.scss";
 @import "../../node_modules/swiper/swiper-vars.scss";
 @import "../../node_modules/swiper/modules/navigation/navigation.scss";
-@import "../../node_modules/swiper/modules/pagination/pagination.scss";
-
+@import "../../node_modules/swiper/modules/pagination/pagination";
 //Blocks
 @import "blocks/page.scss";
 @import "blocks/container.scss";
 @import "blocks/header.scss";
 @import "blocks/main-title.scss";
-@import "blocks/navigation.scss";
 @import "blocks/section-title.scss";
 @import "blocks/section-subtitle.scss";
+@import "blocks/subtitle.scss";
+@import "blocks/text-link.scss";
+@import "blocks/navigation.scss";
 @import "blocks/main.scss";
 @import "blocks/about.scss";
 @import "blocks/skills.scss";
-@import "blocks/slider.scss";
+
