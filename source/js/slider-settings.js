@@ -1,18 +1,18 @@
-import Swiper, { Navigation, pagination } from 'swiper';
+// core version + navigation, pagination modules:
+import Swiper, { Navigation, Pagination, Controller } from 'swiper';
+
+Swiper.use([Navigation, Pagination, Controller]);
 
 const sliderImage = new Swiper(".slider-image", {
-  slidesPerView:1,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
+  loop: true,
+  nested:true,
+});
+
+const sliderDescription = new Swiper(".slider-description", {
+  loop:true,
+  controller: {
+    control: sliderImage,
   },
 });
-
-const sliderDesciption = new Swiper(".slider-description", {
-  slidesPerView:1,
-  nested: true,
-});
-
-sliderImage.controller.control = sliderDesciption;
-sliderDesciption.controller.control = sliderImage;
-
+sliderImage.controller.control = sliderDescription;
+sliderDescription.controller.control = sliderImage;

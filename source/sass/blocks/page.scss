@@ -1,7 +1,8 @@
 // ===Page===
 
 .page {
-  width: 100%;
+  max-width: 100%;
+  min-width: $mobile-width;
   height: 100%;
 }
 

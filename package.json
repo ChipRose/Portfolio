@@ -54,7 +54,7 @@
     "source/sass/**/*.scss"
   ],
   "engines": {
-    "node": "^13 || ^16"
+    "node": "^12 || ^16"
   },
   "dependencies": {
     "gulp-version-number": "^0.2.4",
