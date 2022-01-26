@@ -16,6 +16,7 @@ export const path = {
     images: `${sourceFolder}/img/**/*.{jpg,png,svg}`,
     favicon: `${sourceFolder}/*.ico`,
     webp: `${sourceFolder}/img/**/*.{jpg,jpeg,png}`,
+    nowebp: `!${sourceFolder}/img/favicon/*.png`,
     sprite: `${sourceFolder}/img/icons/*.svg`,
     nosprite: `!${sourceFolder}/img/icons/*.svg`,
     scss: `${sourceFolder}/sass/style.scss`,

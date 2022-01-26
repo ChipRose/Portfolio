@@ -13,9 +13,10 @@
     top: 0;
     left: 0;
     border-bottom: 1px dashed var(--cl-brd-link);
+    transition: all 0.3s ease-out;
   }
   &:hover::before {
-    border: 1px dashed var(--cl-txt-link-hover);
+    border-color: var(--cl-txt-link-hover);
   }
 
   &:hover {
