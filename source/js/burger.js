@@ -26,5 +26,3 @@ const closeBurger = (item) => {
 navigationItems.forEach((item)=>{
   closeBurger(item);
 })
-
-
