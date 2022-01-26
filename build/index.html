@@ -9,7 +9,7 @@
   <link rel="icon" href="favicon.ico" />
   <meta name="description" content="Портфолио Розова ЯС">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="css/style.min.css?_v=20220126202350" rel="stylesheet" type="text/css" />
+  <link href="css/style.min.css?_v=20220126232000" rel="stylesheet" type="text/css" />
   <link rel="preload" href="fonts/Jost-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/Jost-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
   <link rel="preload" href="fonts/Jost-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -19,21 +19,24 @@
 
 <body class="page__body">
   <header class="header page__header">
-  <h1 class="title main-title header__title">Резюме</h1>
-  <nav class="navigation navigation--nojs navigation--closed header__menu">
-    <button class="button navigation__toggle header__burger" type="button" aria-expanded="false"
-      aria-controls="navigation__list">
-      <span class="visually-hidden">Открыть меню </span>
-    </button>
-    <ul class="list navigation__list" id="navigation__list">
-      <li class="navigation__item">
-        <a class="link navigation__link" href="#skills">Основные навыки</a>
-      </li>
-      <li class="navigation__item">
-        <a class="link navigation__link" href="#portfolio">Портфолио</a>
-      </li>
-    </ul>
-  </nav>
+  <div class="header__container">
+    <h1 class="title main-title header__title">Резюме</h1>
+    <div class="header__back"></div>
+    <nav class="navigation navigation--nojs navigation--closed header__menu">
+      <button class="button navigation__toggle header__burger" type="button" aria-expanded="false"
+        aria-controls="navigation__list">
+        <span class="visually-hidden">Открыть меню </span>
+      </button>
+      <ul class="list navigation__list" id="navigation__list">
+        <li class="navigation__item">
+          <a class="link navigation__link" href="#skills">Основные навыки</a>
+        </li>
+        <li class="navigation__item">
+          <a class="link navigation__link" href="#portfolio">Портфолио</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
   <main class="main page__main">
@@ -75,71 +78,75 @@
       <div class="container">
         <a id="skills"></a>
         <h3 class="title section-subtitle skills__subtitle">Основные навыки</h3>
-        <ul class="list skills__list">
-          <li class="skills__item">
-            <div class="skills__image-block">
-              <svg class="icon skills__icon" width="20" height="23" role="img" aria-label="Бейдж HTML"
-                focusable="false">
-                <use xlink:href="img/sprite.svg#html-icon"></use>
-              </svg>
-            </div>
-            <p class="text ">html</p>
-          </li>
-          <li class="skills__item">
-            <div class="skills__image-block">
-              <svg class="icon skills__icon" width="20" height="23" role="img" aria-label="Бейдж CSS" focusable="false">
-                <use xlink:href="img/sprite.svg#css-icon"></use>
-              </svg>
-            </div>
-            <p class="text ">css</p>
-          </li>
-          <li class="skills__item">
-            <div class="skills__image-block">
-              <svg class="icon skills__icon" width="20" height="23" role="img" aria-label="Бейдж JS" focusable="false">
-                <use xlink:href="img/sprite.svg#js-icon"></use>
-              </svg>
-            </div>
-            <p class="text ">js</p>
-          </li>
-          <li class="skills__item">
-            <div class="skills__image-block">
-              <svg class="icon skills__icon" width="29" height="22" role="img" aria-label="Бейдж SCSS"
-                focusable="false">
-                <use xlink:href="img/sprite.svg#scss-icon"></use>
-              </svg>
-            </div>
-            <p class="text ">scss</p>
-          </li>
-        </ul>
-        <ul class="list skills__list">
-          <li class="skills__item">
-            <div class="skills__image-block">
-              <svg class="icon skills__icon" width="23" height="23" role="img" aria-label="Бейдж COREL DRAW"
-                focusable="false">
-                <use xlink:href="img/sprite.svg#corel-icon"></use>
-              </svg>
-            </div>
-            <p class="text ">corel draw</p>
-          </li>
-          <li class="skills__item">
-            <div class="skills__image-block">
-              <svg class="icon skills__icon" width="15" height="23" role="img" aria-label="Бейдж FIGMA"
-                focusable="false">
-                <use xlink:href="img/sprite.svg#figma-icon"></use>
-              </svg>
-            </div>
-            <p class="text ">figma</p>
-          </li>
-          <li class="skills__item">
-            <div class="skills__image-block">
-              <svg class="icon skills__icon" width="23" height="23" role="img" aria-label="Бейдж PHOTOSHOP"
-                focusable="false">
-                <use xlink:href="img/sprite.svg#ps-icon"></use>
-              </svg>
-            </div>
-            <p class="text ">photoshop</p>
-          </li>
-        </ul>
+        <div class="skills__block">
+          <ul class="list skills__list">
+            <li class="skills__item">
+              <div class="skills__image-block">
+                <svg class="icon skills__icon" width="20" height="23" role="img" aria-label="Бейдж HTML"
+                  focusable="false">
+                  <use xlink:href="img/sprite.svg#html-icon"></use>
+                </svg>
+              </div>
+              <p class="text ">html</p>
+            </li>
+            <li class="skills__item">
+              <div class="skills__image-block">
+                <svg class="icon skills__icon" width="20" height="23" role="img" aria-label="Бейдж CSS"
+                  focusable="false">
+                  <use xlink:href="img/sprite.svg#css-icon"></use>
+                </svg>
+              </div>
+              <p class="text ">css</p>
+            </li>
+            <li class="skills__item">
+              <div class="skills__image-block">
+                <svg class="icon skills__icon" width="20" height="23" role="img" aria-label="Бейдж JS"
+                  focusable="false">
+                  <use xlink:href="img/sprite.svg#js-icon"></use>
+                </svg>
+              </div>
+              <p class="text ">js</p>
+            </li>
+            <li class="skills__item">
+              <div class="skills__image-block">
+                <svg class="icon skills__icon" width="29" height="22" role="img" aria-label="Бейдж SCSS"
+                  focusable="false">
+                  <use xlink:href="img/sprite.svg#scss-icon"></use>
+                </svg>
+              </div>
+              <p class="text ">scss</p>
+            </li>
+          </ul>
+          <ul class="list skills__list">
+            <li class="skills__item">
+              <div class="skills__image-block">
+                <svg class="icon skills__icon" width="23" height="23" role="img" aria-label="Бейдж COREL DRAW"
+                  focusable="false">
+                  <use xlink:href="img/sprite.svg#corel-icon"></use>
+                </svg>
+              </div>
+              <p class="text ">corel draw</p>
+            </li>
+            <li class="skills__item">
+              <div class="skills__image-block">
+                <svg class="icon skills__icon" width="15" height="23" role="img" aria-label="Бейдж FIGMA"
+                  focusable="false">
+                  <use xlink:href="img/sprite.svg#figma-icon"></use>
+                </svg>
+              </div>
+              <p class="text ">figma</p>
+            </li>
+            <li class="skills__item">
+              <div class="skills__image-block">
+                <svg class="icon skills__icon" width="23" height="23" role="img" aria-label="Бейдж PHOTOSHOP"
+                  focusable="false">
+                  <use xlink:href="img/sprite.svg#ps-icon"></use>
+                </svg>
+              </div>
+              <p class="text ">photoshop</p>
+            </li>
+          </ul>
+        </div>
         <p class="text skills__text">
           Разработка сайтов в&nbsp;VS Code (HTML, CSS, SCSS, JS), адаптивная, семантичная вёрстка по БЭМ, использование
           svg-графики.
@@ -150,7 +157,7 @@
         </p>
         <p class="text skills__text">
           Знание программ пакета Office. Работа с&nbsp;офисной техникой (распечатка, сканирование, настройка). Работа
-          на&nbsp;оборудовании интерьерной и&nbsp;полиграфической печати.
+          на&nbsp;оборудовании интерьерной и&nbsp;полиграфической печати. Работала в качестве "администратора печатного участка" более 7 лет.
         </p>
         <p class="text skills__text">
           <em>Уровень владения компьютером: </em> продвинутый пользователь.
@@ -227,10 +234,11 @@
                     Реализован в&nbsp;процессе обучения на&nbsp;курсе адаптивной вёрстки и автоматизации в&nbsp;
                     <a class="link text-link" href="https://htmlacademy.ru/" title="Сайт HTML Academy">
                       HTML&nbsp;Academy
-                    </a>
+                    </a> (без наставника).
                   </p>
                   <p class="text slider__text">Адаптивен для разных устройств, адаптивная и оптимизированная
-                    графика, svg, спрайт. Использованы Flex, Grid, препроцессор SCSS, сборщик Gulp. Имеет меню-бургер, слайдер.
+                    графика, svg, спрайт. Использованы Flex, Grid, препроцессор SCSS, сборщик Gulp. Имеет меню-бургер,
+                    слайдер.
                   </p>
                 </div>
                 <a class="link button-preview slider__button" target="_blank"
@@ -296,7 +304,7 @@
   </div>
 </footer>
 
-  <script src="js/main.min.js?_v=20220126202350"></script>
+  <script src="js/main.min.js?_v=20220126232000"></script>
 </body>
 
 </html>

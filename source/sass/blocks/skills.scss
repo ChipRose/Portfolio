@@ -3,6 +3,17 @@
 .skills__subtitle {
   margin-bottom: 5px;
 }
+// Block
+
+.skills__block {
+  @media (min-width: $tablet-width) {
+    margin-right: -5px;
+    margin-left: -5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 
 // List
 
@@ -15,6 +26,12 @@
 
   @include set-font-style(var(--fz-skills-item), var(--lh-skills-item));
   @include uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
 }
 
 .skills__item {
