@@ -123,8 +123,11 @@
   background-color: var(--cl-bg-menu);
 
   @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 0;
     min-height: 0;
     display: flex;
+    background-color: transparent;
   }
 }
 

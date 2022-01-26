@@ -35,12 +35,13 @@
 // Main
 
 .page__main {
+  margin-top: 42px;
   margin-bottom: 10px;
   grid-row: 2/3;
   grid-column: 1/2;
 
-  @media (max-width: $mobile-width-only) {
-    margin-top: 42px;
+  @media (min-width: $tablet-width) {
+    margin-top: 10px;
   }
 
 }
