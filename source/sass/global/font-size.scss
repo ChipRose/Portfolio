@@ -1,0 +1,45 @@
+:root {
+  --fz-main: 12px;
+  --lh-main: 16px;
+  --fz-main-title: 18px;
+  --lh-main-title: 26px;
+  --fz-section-title: 20px;
+  --lh-section-title: 29px;
+  --fz-section-subtitle: 16px;
+  --lh-section-subtitle: 23px;
+  --fz-subtitle: 12px;
+  --lh-subtitle: 16px;
+  --fz-menu-item: 18px;
+  --lh-menu-item: 26px;
+  --fz-skills-item: 10px;
+  --lh-skills-item: 25px;
+  --fz-swiper-navigation: 35px;
+  --fz-slider-button: 13px;
+  --lh-slider-button: 18px;
+  --fz-footer-text: 16px;
+  --lh-footer-text: 23px;
+}
+
+@media (min-width: $tablet-width) {
+  :root {
+    --fz-main: 16px;
+    --lh-main: 24px;
+    --fz-section-title: 22px;
+    --lh-section-title: 31px;
+    --fz-section-subtitle: 19px;
+    --lh-section-subtitle: 26px;
+    --fz-skills-item: 13px;
+    --lh-skills-item: 27px;
+    --fz-subtitle: 16px;
+    --lh-subtitle: 20px;
+    --fz-slider-button: 16px;
+    --lh-slider-button: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  :root {
+    --fz-menu: 20px;
+    --lh-menu: 30px;
+  }
+}

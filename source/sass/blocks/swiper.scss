@@ -1,0 +1,18 @@
+// Pagination
+
+.swiper-pagination > .swiper-pagination-bullet {
+  width: 20px;
+  height: 2px;
+  border-radius: 0;
+  opacity: 1;
+  background-color: var(--cl-bg-bullet);
+}
+
+.swiper-pagination > .swiper-pagination-bullet-active {
+  background-color: var(--cl-bg-bullet-current);
+}
+
+.swiper .swiper-wrapper--image {
+  width: 280px;
+  outline: 1px solid green;
+}

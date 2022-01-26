@@ -1,0 +1,19 @@
+// Button
+
+.button-preview {
+  border-radius: 3px;
+  background-color: var(--cl-bg-button);
+  color: var(--cl-txt-main-contrast);
+  transition: all 0.3s ease-out;
+
+  @include set-font-style(var(--fz-slider-button), var(--lh-slider-button));
+  @include uppercase;
+
+  &:hover {
+    box-shadow: 0 0 0 2px var(--cl-shd-button), 0 0 0 4px var(--cl-bg-button);
+  }
+
+  &:active {
+    background-color: var(--cl-bg-button-active);
+  }
+}

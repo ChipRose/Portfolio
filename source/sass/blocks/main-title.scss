@@ -1,0 +1,13 @@
+// Main title
+
+.main-title {
+  text-align: center;
+  color: var(--cl-txt-main-contrast);
+
+  @include set-font-style(var(--fz-main-title), var(--lh-main-title));
+  @include uppercase();
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
+}
