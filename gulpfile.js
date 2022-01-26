@@ -13,6 +13,7 @@ global.app = {
 }
 
 import { copy } from "./gulp/tasks/copy.js";
+import { copyImages } from "./gulp/tasks/copyImages.js";
 import { reset } from "./gulp/tasks/reset.js";
 import { html } from "./gulp/tasks/html.js";
 import { server } from "./gulp/tasks/server.js";
@@ -33,9 +34,14 @@ const watcher = () => {
 
 //Script
 
+const devTasks = gulp.parallel(copy, html, scss, copyImages, createWebp, sprite, js);
 const mainTasks = gulp.parallel(copy, html, scss, images, createWebp, sprite, js);
+
 
 //Result
 
-const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));
+const dev = gulp.series(reset, devTasks, gulp.parallel(watcher, server));
 gulp.task("default", dev);
+
+const build = gulp.series(reset, mainTasks);
+gulp.task("build", build);
