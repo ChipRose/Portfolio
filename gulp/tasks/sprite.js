@@ -1,4 +1,5 @@
 import svgstore from "gulp-svgstore";
+import svgmin from 'gulp-svgmin';
 
 export const sprite = () => {
   return app.gulp.src(app.path.src.sprite)
@@ -8,6 +9,7 @@ export const sprite = () => {
         message: "Error: <%= error.message %>"
       })
     ))
+    .pipe(svgmin())
     .pipe(svgstore({
       inlineSvg: true
     }))

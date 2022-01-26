@@ -9,10 +9,10 @@
 // Body
 
 .page__body {
-  padding-top: 20px;
   margin-right: auto;
   margin-left: auto;
   min-height: 100%;
+  position: relative;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   background-color: var(--cl-bg-page);
@@ -24,9 +24,12 @@
 // Header
 
 .page__header {
-  margin-bottom: 10px;
-  grid-row: 1/2;
-  grid-column: 1/2;
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+    position: fixed;
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
 }
 
 // Main
@@ -35,6 +38,11 @@
   margin-bottom: 10px;
   grid-row: 2/3;
   grid-column: 1/2;
+
+  @media (max-width: $mobile-width-only) {
+    margin-top: 42px;
+  }
+
 }
 
 // Footer

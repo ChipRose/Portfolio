@@ -4,11 +4,12 @@
 <head>
   <meta charset="utf-8" />
   <title>Портфолио фронтенд-разработчика</title>
-  <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="img/favicon/" type="image/svg+xml" />
   <link rel="icon" href="favicon.ico" />
   <meta name="description" content="Портфолио Розова ЯС">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="css/style.min.css?_v=20220126021942" rel="stylesheet" type="text/css" />
+  <link href="css/style.min.css?_v=20220126165757" rel="stylesheet" type="text/css" />
   <link rel="preload" href="fonts/Jost-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/Jost-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
   <link rel="preload" href="fonts/Jost-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -36,7 +37,7 @@
 </header>
 
   <main class="main page__main">
-    <article class="about main__about">
+    <section class="about main__about">
       <div class="container">
         <header class="about__header">
           <div class="about__image-block">
@@ -50,28 +51,26 @@
             <h2 class="title section-title about__title">Розова Яна Сергеевна</h2>
           </div>
         </header>
-        <section class="about__content">
-          <h3 class="title section-subtitle about__subtitle">Обо мне</h3>
-          <p class="text  about__text">
-            <em>Образование высшее, бакалавр, инженер, магистр.</em> Закончила &laquo;Технологический институт
-            Южного федерального университета&raquo; (Таганрог) в&nbsp;2010&nbsp;году.
-          </p>
-          <p class="text  about__text">
-            <em> Специальность:</em> Оптические системы связи и&nbsp;локации.
-          </p>
-          <p class="text  about__text">
-            С&nbsp;2020&nbsp;года увлекаюсь разработкой сайтов. В&nbsp;2021&nbsp;году прошла обучение на курсе
-            &laquo;Профессиональная вёрстка
-            сайтов&raquo; в&nbsp;&laquo;HTML&nbsp;Academy&raquo;. Принимала участие в&nbsp;марафонах по&nbsp;вёрстке
-            и&nbsp;&laquo;Кибер Битве-2021&raquo;.
-          </p>
-          <p class="text  about__text">
-            <em>Прохожу обучение </em> в&nbsp;&laquo;HTML&nbsp;Academy&raquo; по&nbsp;профессии
-            &laquo;Фронтенд-разработчик&raquo; в&nbsp;асинхронном формате.
-          </p>
-        </section>
+        <h3 class="title section-subtitle about__subtitle">Обо мне</h3>
+        <p class="text  about__text">
+          <em>Образование высшее, бакалавр, инженер, магистр.</em> Закончила &laquo;Технологический институт
+          Южного федерального университета&raquo; (Таганрог) в&nbsp;2010&nbsp;году.
+        </p>
+        <p class="text  about__text">
+          <em> Специальность:</em> Оптические системы связи и&nbsp;локации.
+        </p>
+        <p class="text  about__text">
+          С&nbsp;2020&nbsp;года увлекаюсь разработкой сайтов. В&nbsp;2021&nbsp;году прошла обучение на курсе
+          &laquo;Профессиональная вёрстка
+          сайтов&raquo; в&nbsp;&laquo;HTML&nbsp;Academy&raquo;. Принимала участие в&nbsp;марафонах по&nbsp;вёрстке
+          и&nbsp;&laquo;Кибер Битве-2021&raquo;.
+        </p>
+        <p class="text  about__text">
+          <em>Прохожу обучение </em> в&nbsp;&laquo;HTML&nbsp;Academy&raquo; по&nbsp;профессии
+          &laquo;Фронтенд-разработчик&raquo; в&nbsp;асинхронном формате.
+        </p>
       </div>
-    </article>
+    </section>
     <section class="skills main__skills">
       <div class="container">
         <a id="skills"></a>
@@ -161,17 +160,20 @@
         </p>
       </div>
     </section>
-    <article class="portfolio">
+    <section class="portfolio main__portfolio">
       <div class="container">
         <a id="portfolio"></a>
         <h2 class="visually-hidden">Портфолио</h2>
-        <h3 class="title section-subtitle">Примеры работ</h3>
-        <div class="slider">
-          <button class="button slider__control swiper-button-prev" type="button">
+        <h3 class="title section-subtitle portfolio__subtitle">Примеры работ</h3>
+        <div class="slider portfolio__slider">
+          <button class="button swiper-button-prev slider__control" type="button">
             <span class="visually-hidden">К предыдущему слайду</span>
           </button>
+          <button class="button swiper-button-next slider__control" type="button">
+            <span class="visually-hidden">К следующему слайду</span>
+          </button>
           <div class="swiper slider__image-block">
-            <ul class="list slider__wrapper swiper-wrapper">
+            <ul class="list swiper-wrapper swiper-wrapper--image">
               <li class="swiper-slide">
                 <picture>
                   <source type="image/webp" media="(min-width:768px)"
@@ -180,7 +182,7 @@
                     srcset="img/portfolio/site-pre-cat.webp 1x, img/portfolio/site-pre-cat@2x.webp 2x">
                   <source media="(min-width:768px)"
                     srcset="img/portfolio/site-pre-cat-tablet.png 1x, img/portfolio/site-pre-cat-tablet@2x.png 2x">
-                  <img class="@img slider__img" src="img/portfolio/site-pre-cat.png"
+                  <img class="img slider__img" src="img/portfolio/site-pre-cat.png"
                     srcset="img/portfolio/site-pre-cat@2x.png 2x" width="280" height="186"
                     alt="Демонстрация сайта Cat Energy" />
                 </picture>
@@ -193,7 +195,7 @@
                     srcset="img/portfolio/site-pre-technomart.webp 1x, img/portfolio/site-pre-technomart@2x.webp 2x">
                   <source media="(min-width:768px)"
                     srcset="img/portfolio/site-pre-technomart-tablet.png 1x, img/portfolio/site-pre-technomart-tablet@2x.png 2x">
-                  <img class="@img slider__img" src="img/portfolio/site-pre-technomart.png"
+                  <img class="img slider__img" src="img/portfolio/site-pre-technomart.png"
                     srcset="img/portfolio/site-pre-technomart@2x.png 2x" width="280" height="186"
                     alt="Демонстрация сайта Техномарт" />
                 </picture>
@@ -206,85 +208,95 @@
                     srcset="img/portfolio/site-pre-playtennis.webp 1x, img/portfolio/site-pre-playtennis@2x.webp 2x">
                   <source media="(min-width:768px)"
                     srcset="img/portfolio/site-pre-playtennis-tablet.png 1x, img/portfolio/site-pre-playtennis-tablet@2x.png 2x">
-                  <img class="@img slider__img" src="img/portfolio/site-pre-playtennis.png"
+                  <img class="img slider__img" src="img/portfolio/site-pre-playtennis.png"
                     srcset="img/portfolio/site-pre-playtennis.png 2x" width="280" height="186"
                     alt="Демонстрация сайта Play ТЕННИС" />
                 </picture>
               </li>
             </ul>
           </div>
-          <button class="button slider__control swiper-button-next" type="button">
-            <span class="visually-hidden">К следующему слайду</span>
-          </button>
           <div class="swiper-pagination slider__pagination"></div>
           <div class="swiper slider__description-block">
-            <ul class="list slider__wrapper slider__description-wrapper swiper-wrapper">
-              <li class="slider__description-item swiper-slide">
+            <ul class="list slider__description-wrapper swiper-wrapper">
+              <li class="swiper-slide slider__description-item">
                 <h4 class="title subtitle">Сайт для интернет-магазина <span class="project-name">&laquo;Cat
                     energy&raquo;</span>
                 </h4>
-                <p class="text slider__text">
-                  Реализован в&nbsp;процессе обучения на&nbsp;курсе адаптивной вёрстки и автоматизации в&nbsp;
-                  <a class="link text-link" href="https://htmlacademy.ru/" title="Сайт HTML Academy">
-                    HTML&nbsp;Academy
-                  </a>
-                </p>
-                <p class="text slider__text">Адаптивен для разных устройств, адаптивная и оптимизированная
-                  графика. Использованы Flex, Grid, препроцессор SCSS, сборщик Gulp. Имеет меню-бургер, слайдер. </p>
-                <a class="button button button-preview" target="_blank" href="https://chiprose.github.io/Cat-energy/"
-                  title="Просмотреть опубликованный сайт">Открыть сайт
+                <div class="slider__text-block">
+                  <p class="text slider__text">
+                    Реализован в&nbsp;процессе обучения на&nbsp;курсе адаптивной вёрстки и автоматизации в&nbsp;
+                    <a class="link text-link" href="https://htmlacademy.ru/" title="Сайт HTML Academy">
+                      HTML&nbsp;Academy
+                    </a>
+                  </p>
+                  <p class="text slider__text">Адаптивен для разных устройств, адаптивная и оптимизированная
+                    графика. Использованы Flex, Grid, препроцессор SCSS, сборщик Gulp. Имеет меню-бургер, слайдер.
+                  </p>
+                </div>
+                <a class="link button-preview slider__button" target="_blank"
+                  href="https://chiprose.github.io/Cat-energy/" title="Просмотреть опубликованный сайт">Открыть сайт
                 </a>
               </li>
-              <li class="slider__description-item swiper-slide">
+              <li class="swiper-slide slider__description-item">
                 <h4 class="title subtitle">Сайт для интернет-магазина <span
-                    class="project-name">&laquo;Техномарт&raquo;</span> </h4>
-                <p class="text  slider__text">
-                  Реализован в&nbsp;процессе обучения на&nbsp;курсе профессиональной вёрстки в&nbsp;
-                  <a class="link text-link" href="https://htmlacademy.ru/"
-                    title="Сайт HTML Academy">HTML&nbsp;Academy</a>
-                </p>
-                <p class="text slider__text">
-                  Использованы Grid, Flex. Проходит проверку переполнения контентом. Имеет модальные окна, слайдеры,
-                  работающие на&nbsp;JS&nbsp;и&nbsp;CSS. Реализована доступность
-                  для&nbsp;скринридеров.
-                </p>
-                <a class="button button-preview" target="_blank" href="https://chiprose.github.io/Technomart/"
-                  title="Просмотреть опубликованный сайт">Открыть сайт</a>
+                    class="project-name">&laquo;Техномарт&raquo;</span>
+                </h4>
+                <div class="slider__text-block">
+                  <p class="text slider__text">
+                    Реализован в&nbsp;процессе обучения на&nbsp;курсе профессиональной вёрстки в&nbsp;
+                    <a class="link text-link" href="https://htmlacademy.ru/"
+                      title="Сайт HTML Academy">HTML&nbsp;Academy</a>
+                  </p>
+                  <p class="text slider__text">
+                    Использованы Grid, Flex. Проходит проверку переполнения контентом. Имеет модальные окна, слайдеры,
+                    работающие на&nbsp;JS&nbsp;и&nbsp;CSS. Реализована доступность
+                    для&nbsp;скринридеров.
+                  </p>
+                </div>
+                <a class="link button-preview slider__button" target="_blank"
+                  href="https://chiprose.github.io/Technomart/" title="Просмотреть опубликованный сайт">Открыть сайт</a>
               </li>
-              <li class="slider__description-item swiper-slide">
-                <h4 class="title subtitle">Сайт для теннисного клуба <span class="project-name">&laquo;Play
-                    ТЕННИС&raquo;</span> </h4>
-                <p class="text  slider__text">Реализован по собственному проекту.</p>
-                <p class="text  slider__text">Адаптивен для разных устройств. Использованы Flex. Имеет
-                  меню-бургер, слайдер с
-                  фотогалереей, спойлеры, табы.</p>
-                <a class="button button button-preview" target="_blank" href="https://chiprose.github.io/PlayTennis/"
-                  title="Просмотреть опубликованный сайт">Открыть сайт</a>
+              <li class="swiper-slide slider__description-item">
+                <h4 class="title subtitle">Сайт для теннисного клуба
+                  <span class="project-name">&laquo;Play ТЕННИС&raquo;</span>
+                </h4>
+                <div class="slider__text-block">
+                  <p class="text slider__text">Реализован по собственному проекту.</p>
+                  <p class="text slider__text">Адаптивен для разных устройств. Использованы Flex. Имеет
+                    меню-бургер, слайдер с
+                    фотогалереей, спойлеры, табы.
+                  </p>
+                </div>
+                <a class="link button-preview slider__button" target="_blank"
+                  href="https://chiprose.github.io/PlayTennis/" title="Просмотреть опубликованный сайт">Открыть сайт</a>
               </li>
             </ul>
           </div>
         </div>
       </div>
-    </article>
+    </section>
   </main>
-  <footer class="page__footer">
-  <div class="container">
+  <footer class="footer page__footer">
+  <div class="container footer__container">
     <a class="link footer__link" href="https://github.com/ChipRose" title="Посмотреть работы на GitHub">
-      <svg class="icon footer__icon" width="20" height="20" role="img" aria-label="Иконка Github" focusable="false">
+      <svg class="footer__icon" width="21" height="21" role="img" aria-label="Иконка Github" focusable="false">
         <use xlink:href="img/sprite.svg#github-icon"></use>
       </svg>
       GitHub
     </a>
     <a class="link footer__link" href="tel:+79604608234" title="Позвонить Frontend-разработчику">
-      <svg class="icon footer__icon" width="20" height="20" role="img" aria-label="Иконка Github" focusable="false">
+      <svg class="footer__icon" width="21" height="21" role="img" aria-label="Иконка Github" focusable="false">
         <use xlink:href="img/sprite.svg#phone-icon"></use>
       </svg>
       +7 960 460 8 234
     </a>
+    <p class="text">
+      ©Yana Rozova
+    </p>
   </div>
 </footer>
 
-  <script src="js/main.min.js?_v=20220126021942"></script>
+  <script src="js/main.min.js?_v=20220126165757"></script>
 </body>
 
 </html>
