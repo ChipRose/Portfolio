@@ -27,13 +27,23 @@
   grid-row: 1/2;
   grid-column: 1/2;
 
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+    position: fixed;
+    top: 0;
+  }
+}
 
+.page.page--nojs .page__header {
+  @media (max-width: $mobile-width-only) {
+    position: static;
+  }
 }
 
 // Main
 
 .page__main {
-  //margin-top: 46px;
+  margin-top: 46px;
   margin-bottom: 10px;
   grid-row: 2/3;
   grid-column: 1/2;
@@ -41,6 +51,10 @@
   @media (min-width: $tablet-width) {
     margin-top: 10px;
   }
+}
+
+.page.page--nojs .page__main{
+  margin-top: 0;
 }
 
 // Footer
