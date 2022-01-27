@@ -91,6 +91,7 @@
 // Pagination
 
 .slider .slider__pagination {
+  position: relative;
   grid-row: 2/3;
   grid-column: 1/3;
 }
