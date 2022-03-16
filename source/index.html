@@ -152,6 +152,19 @@
               <li class="swiper-slide">
                 <picture>
                   <source type="image/webp" media="(min-width:768px)"
+                    srcset="@img/portfolio/site-pre-keksobooking-tablet.webp 1x, @img/portfolio/site-pre-keksobooking-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="@img/portfolio/site-pre-keksobooking.webp 1x, @img/portfolio/site-pre-keksobooking.webp 2x">
+                  <source media="(min-width:768px)"
+                    srcset="@img/portfolio/site-pre-keksobooking-tablet.png 1x, @img/portfolio/site-pre-keksobooking-tablet@2x.png 2x">
+                  <img class="img slider__img" src="@img/portfolio/site-pre-keksobooking.png"
+                    srcset="@img/portfolio/site-pre-keksobooking@2x.png 2x" width="280" height="186"
+                    alt="Демонстрация сайта Kekesobooking" />
+                </picture>
+              </li>
+              <li class="swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width:768px)"
                     srcset="@img/portfolio/site-pre-cat-tablet.webp 1x, @img/portfolio/site-pre-cat-tablet@2x.webp 2x">
                   <source type="image/webp"
                     srcset="@img/portfolio/site-pre-cat.webp 1x, @img/portfolio/site-pre-cat@2x.webp 2x">
@@ -193,6 +206,27 @@
           <div class="swiper-pagination slider__pagination"></div>
           <div class="swiper slider__description-block">
             <ul class="list slider__description-wrapper swiper-wrapper">
+              <li class="swiper-slide slider__description-item">
+                <h4 class="title subtitle">Сайт для сервиса <span class="project-name">&laquo;keksobooking&raquo;</span>
+                </h4>
+                <div class="slider__text-block">
+                  <p class="text slider__text">
+                    Реализован в&nbsp;процессе обучения на&nbsp;курсе <br>&laquo;JavaScript. Профессиональная разработка веб-интерфейсов&raquo; <br> в&nbsp;
+                    <a class="link text-link" href="https://htmlacademy.ru/" title="Сайт HTML Academy">
+                      HTML&nbsp;Academy
+                    </a> (без наставника).
+                  </p>
+                  <p class="text slider__text">
+                    Реализованы возможности получения и отправки данных объявлений с сервера, так же предусмотрено состояние, если возникли ошибки работы с сервером.
+                    Полученные данные отрисовываются в балунах к меткам карты, имеется возможность фильтрации объявлений по заданным параметрам.
+                    Осуществляется валидация формы.
+                    Использованы библиотеки leaflet, lodash. Сборка проекта реализована с помощью webpack.
+                  </p>
+                </div>
+                <a class="link button-preview slider__button" target="_blank"
+                  href="https://chiprose.github.io/Keksobooking/" title="Просмотреть опубликованный сайт">Открыть сайт
+                </a>
+              </li>
               <li class="swiper-slide slider__description-item">
                 <h4 class="title subtitle">Сайт для интернет-магазина <span class="project-name">&laquo;Cat
                     energy&raquo;</span>
