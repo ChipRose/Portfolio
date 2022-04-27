@@ -32,6 +32,7 @@ const renderSlider = (slider) => {
       textItem.querySelector('.slider__text-anotation').appendChild(link);
     };
     textItem.querySelector('.slider__text-description').textContent = slide.text;
+    textItem.querySelector('.slider__button').href = slide.link;
     slideTextFragment.appendChild(textItem);
   });
 
