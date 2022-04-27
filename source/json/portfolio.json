@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "title": "САЙТ ДЛЯ СЕРВИСА «KEKSOBOOKING»",
+    "anotation": "Реализован в процессе обучения на курсе «JavaScript. Профессиональная разработка веб-интерфейсов» в  HTML Academy (без наставника).",
+    "text": "Реализованы возможности получения и отправки данных объявлений с сервера, так же предусмотрено состояние, если возникли ошибки работы с сервером. Полученные данные отрисовываются в балунах к меткам карты, имеется возможность фильтрации объявлений по заданным параметрам. Осуществляется валидация формы. Использованы библиотеки leaflet, lodash. Сборка проекта реализована с помощью webpack.",
+    "link": "https://chiprose.github.io/Keksobooking/",
+    "organization-link": "https://htmlacademy.ru/",
+    "previewSrc": "img/portfolio/site-pre-keksobooking.png",
+    "previewSrcset": "img/portfolio/site-pre-keksobooking@2x.png 2x",
+    "previewSrcPngTablet": "img/portfolio/site-pre-cat-tablet.png 1x, img/portfolio/site-pre-cat-tablet@2x.png 2x",
+    "previewSrcWebp": "img/portfolio/site-pre-keksobooking.webp 1x, img/portfolio/site-pre-keksobooking.webp 2x",
+    "previewSrcWebpTablet": "img/portfolio/site-pre-keksobooking-tablet.webp 1x, img/portfolio/site-pre-keksobooking-tablet@2x.webp 2x",
+    "previewAlt": "Демонстрация сайта Kekesobooking"
+  },
+  {
+    "id": 2,
+    "title": "САЙТ ДЛЯ ИНТЕРНЕТ-МАГАЗИНА «CAT ENERGY»",
+    "anotation": "Реализован в процессе обучения на курсе адаптивной вёрстки и автоматизации в  HTML Academy (без наставника).",
+    "text": "Адаптивен для разных устройств, адаптивная и оптимизированная графика, svg, спрайт. Использованы Flex, Grid, препроцессор SCSS, сборщик Gulp. Имеет меню-бургер, слайдер.",
+    "link": "https://chiprose.github.io/Cat-energy/",
+    "organization-link": "https://htmlacademy.ru/",
+    "previewSrc": "img/img/portfolio/site-pre-cat.png",
+    "previewSrcset": "img/portfolio/site-pre-cat@2x.png 2x",
+    "previewSrcPngTablet": "img/portfolio/site-pre-cat-tablet.png 1x, img/portfolio/site-pre-cat-tablet@2x.png 2x",
+    "previewSrcWebp": "img/portfolio/site-pre-cat.webp 1x, img/portfolio/site-pre-cat@2x.webp 2x",
+    "previewSrcWebpTablet": "img/portfolio/site-pre-cat-tablet.webp 1x, img/portfolio/site-pre-cat-tablet@2x.webp 2x",
+    "previewAlt": "Демонстрация сайта Cat Energy"
+  },
+  {
+    "id": 3,
+    "title": "САЙТ ДЛЯ ИНТЕРНЕТ-МАГАЗИНА «ТЕХНОМАРТ»",
+    "anotation": "Реализован в процессе обучения на курсе профессиональной вёрстки в  HTML Academy",
+    "text": "Использованы Grid, Flex. Проходит проверку переполнения контентом. Имеет модальные окна, слайдеры, работающие на JS и CSS. Реализована доступность для скринридеров.",
+    "link": "https://chiprose.github.io/Technomart/",
+    "organization-link": "https://htmlacademy.ru/",
+    "previewSrc": "img/portfolio/site-pre-technomart.png",
+    "previewSrcset": "img/portfolio/site-pre-technomart@2x.png 2x",
+    "previewSrcPngTablet": "img/portfolio/site-pre-technomart-tablet.png 1x, img/portfolio/site-pre-technomart-tablet@2x.png 2x",
+    "previewSrcWebp": "img/portfolio/site-pre-technomart.webp 1x, img/portfolio/site-pre-technomart@2x.webp 2x",
+    "previewSrcWebpTablet": "img/portfolio/site-pre-technomart-tablet.webp 1x, img/portfolio/site-pre-technomart-tablet@2x.webp 2x",
+    "previewAlt": "Демонстрация сайта Техномарт"
+  },
+  {
+    "id": 4,
+    "title": "САЙТ ДЛЯ ТЕННИСНОГО КЛУБА «PLAY ТЕННИС»",
+    "anotation": "Реализован по собственному проекту.",
+    "text": "Адаптивен для разных устройств. Использованы Flex. Имеет меню-бургер, слайдер с фотогалереей, спойлеры, табы.",
+    "link": "https://chiprose.github.io/Technomart/",
+    "organization-link": "https://htmlacademy.ru/",
+    "previewSrc": "img/portfolio/site-pre-playtennis.png",
+    "previewSrcset": "img/portfolio/site-pre-playtennis.png 2x",
+    "previewSrcPngTablet": "img/portfolio/site-pre-playtennis-tablet.png 1x, img/portfolio/site-pre-playtennis-tablet@2x.png 2x",
+    "previewSrcWebp": "img/portfolio/site-pre-playtennis.webp 1x, img/portfolio/site-pre-playtennis@2x.webp 2x",
+    "previewSrcWebpTablet": "img/portfolio/site-pre-playtennis-tablet.webp 1x, img/portfolio/site-pre-playtennis-tablet@2x.webp 2x",
+    "previewAlt": "Демонстрация сайта Play ТЕННИС"
+  }
+]
