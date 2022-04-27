@@ -22,6 +22,16 @@ const renderSlider = (slider) => {
     slideImageFragment.appendChild(imageItem);
 
     textItem.querySelector('.subtitle').textContent = slide.title;
+    textItem.querySelector('.slider__text').textContent = slide.anotation;
+    if(slide.organizationLink) {
+      const link = document.createElement('a');
+      link.classList.add('link');
+      link.classList.add('text-link');
+      link.href = slide.organizationLink;
+      link.textContent = slide.organizationName;
+      textItem.querySelector('.slider__text-anotation').appendChild(link);
+    };
+    textItem.querySelector('.slider__text-description').textContent = slide.text;
     slideTextFragment.appendChild(textItem);
   });
 
