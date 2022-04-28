@@ -8,7 +8,8 @@ const HtmlMinimizerPlugin = require('html-minimizer-webpack-plugin');
 const OptimizeSccAssetsWebpackPlugin = require('optimize-css-assets-webpack-plugin');
 const TerserWebpackPlugin = require('terser-webpack-plugin');
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
-const ImageminWebpWebpackPlugin= require('imagemin-webp-webpack-plugin');
+const ImageminWebpWebpackPlugin = require('imagemin-webp-webpack-plugin');
+const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
 
 const CopyPlugin = require('copy-webpack-plugin');
 
@@ -48,6 +49,9 @@ const plugins = () => {
       filename: 'css/style.min.css',
     }),
     new ImageminWebpWebpackPlugin(),
+    new SpriteLoaderPlugin({
+      plainSprite: true,
+    }),
     new CopyPlugin({
       patterns: [
         { from: path.resolve(__dirname, 'source/fonts'), to: 'fonts' },
@@ -101,6 +105,21 @@ module.exports = {
       {
         test: /\.(jpeg|jpg|png|gif|svg)$/i,
         type: 'asset',
+      },
+      {
+        //Sprite
+        test: /\img\icons\/.svg$/,
+        include: path.resolve(__dirname, 'source/icons'),
+        use: [
+          {
+            loader: 'svg-sprite-loader', 
+            options: {
+              extract: true,
+              spriteFilename: './build/img/sprite.svg',
+            }
+          },
+          'svgo-loader'
+        ],
       },
       {
         //JS
