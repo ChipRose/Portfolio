@@ -5,8 +5,8 @@ const HTMLPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const HtmlMinimizerPlugin = require('html-minimizer-webpack-plugin');
-const OptimizeSccAssetsWebpackPlugin = require('optimize-css-assets-webpack-plugin');
 const TerserWebpackPlugin = require('terser-webpack-plugin');
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 const ImageminWebpWebpackPlugin = require('imagemin-webp-webpack-plugin');
 const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
@@ -35,7 +35,7 @@ function optimization() {
           },
         },
       }),
-      new OptimizeSccAssetsWebpackPlugin(),
+      new CssMinimizerPlugin(),
       new HtmlMinimizerPlugin(),
     ];
   }
@@ -104,21 +104,21 @@ module.exports = {
       //Images
       {
         test: /\.(jpeg|jpg|png|gif|svg)$/i,
+        exclude: path.resolve(__dirname, 'source/img/icons'),
         type: 'asset',
       },
       {
         //Sprite
-        test: /\img\icons\/.svg$/,
-        include: path.resolve(__dirname, 'source/icons'),
+        test: /\.svg$/,
+        include: path.resolve(__dirname, 'source/img/icons'),
         use: [
           {
             loader: 'svg-sprite-loader', 
             options: {
               extract: true,
-              spriteFilename: './build/img/sprite.svg',
+              spriteFilename: './img/sprite.svg',
             }
           },
-          'svgo-loader'
         ],
       },
       {
