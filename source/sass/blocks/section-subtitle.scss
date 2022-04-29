@@ -1,7 +1,6 @@
-//===Section subtitle===
+//Section subtitle
 
 .section-subtitle {
   @include set-font-style(var(--fz-section-subtitle), var(--lh-section-subtitle));
   @include uppercase;
-  text-align: center;
 }

@@ -1,17 +1,17 @@
-import Swiper, { Navigation, Pagination, Controller } from "swiper";
+import Swiper, { Navigation, Pagination, Controller } from 'swiper';
 
 Swiper.use([Navigation, Pagination, Controller]);
 
-const mainSliderSelector = ".slider__image-block";
-const navSliderSelector = ".slider__description-block";
+const mainSliderSelector = '.slider__image-block';
+const navSliderSelector = '.slider__description-block';
 
 const mainSliderOptions = {
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
   pagination: {
-    el: ".swiper-pagination",
+    el: '.swiper-pagination',
     clickable: true,
   },
   loop: true,

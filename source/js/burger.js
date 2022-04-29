@@ -1,53 +1,53 @@
 //Burger
-const navigation = document.querySelector(".navigation");
-const header = document.querySelector(".header");
-const burger = document.querySelector(".navigation__toggle");
-const navigationItems = document.querySelectorAll(".navigation__item");
-const page = document.querySelector(".page");
-const body = document.querySelector(".body");
-const main = document.querySelector(".main");
 
-navigation.classList.remove("navigation--nojs");
-page.classList.remove("page--nojs");
+const navigation = document.querySelector('.navigation');
+const burger = document.querySelector('.navigation__toggle');
+const navigationItems = document.querySelectorAll('.navigation__item');
+const page = document.querySelector('.page');
+const body = document.querySelector('.body');
+const main = document.querySelector('.main');
+
+navigation.classList.remove('navigation--nojs');
+page.classList.remove('page--nojs');
 
 const openBurger = () => {
-  navigation.classList.remove("navigation--closed");
-  navigation.classList.add("navigation--opened");
+  navigation.classList.remove('navigation--closed');
+  navigation.classList.add('navigation--opened');
 };
 
 const closeBurger = () => {
-  navigation.classList.add("navigation--closed");
-  navigation.classList.remove("navigation--opened");
+  navigation.classList.add('navigation--closed');
+  navigation.classList.remove('navigation--opened');
 };
 
 const closeBurgerAfterClick = (item) => {
-  item.addEventListener("click", () => {
+  item.addEventListener('click', () => {
     closeBurger();
   })
 };
 
-burger.addEventListener("click", function () {
-  if (navigation.classList.contains("navigation--closed")) {
+burger.addEventListener('click', function () {
+  if (navigation.classList.contains('navigation--closed')) {
     openBurger();
-    body.classList.add("lock");
+    body.classList.add('lock');
   } else {
     closeBurger();
-    body.classList.remove("lock");
+    body.classList.remove('lock');
   }
 });
 
-main.addEventListener("click", () => {
-  if (navigation.classList.contains("navigation--opened")) {
+main.addEventListener('click', () => {
+  if (navigation.classList.contains('navigation--opened')) {
     closeBurger();
-    body.classList.remove("lock");
+    body.classList.remove('lock');
   }
 })
 
 
 // {
-//body.addEventListener("click", () => {
+//body.addEventListener('click', () => {
 //closeBurger();
-//body.classList.remove("lock");
+//body.classList.remove('lock');
 //})
 //};
 
