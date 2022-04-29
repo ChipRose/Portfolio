@@ -10,4 +10,3 @@ import { renderSlider } from './render-slide.js';
 getSlider.then((slider) => {
   renderSlider(slider);
 });
-
