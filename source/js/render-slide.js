@@ -12,7 +12,6 @@ const renderSlider = (slider) => {
     const textItem = slideTextTemplate.cloneNode(true);
     const image = imageItem.querySelector('.slider__img');
     
-
     imageItem.querySelector('#image-webp-tablet').srcset = slide.previewSrcWebpTablet;
     imageItem.querySelector('#image-webp').srcset = slide.previewSrcWebp;
     imageItem.querySelector('#image-png-tablet').srcset = slide.previewSrcPngTablet;
@@ -21,7 +20,7 @@ const renderSlider = (slider) => {
     image.alt = slide.previewAlt;
     slideImageFragment.appendChild(imageItem);
 
-    textItem.querySelector('.subtitle').textContent = slide.title;
+    textItem.querySelector('.slider__title').textContent = slide.title;
     textItem.querySelector('.slider__text').textContent = slide.anotation;
     if(slide.organizationLink) {
       const link = document.createElement('a');

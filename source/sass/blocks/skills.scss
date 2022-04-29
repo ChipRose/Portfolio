@@ -1,11 +1,15 @@
-//Subtile
+// Subtile
 
 .skills__subtitle {
-  margin-bottom: 5px;
+  margin: 0 0 20px;
+  text-align: center;
 }
+
 // Block
 
 .skills__block {
+  margin: 0 -10px 20px;
+
   @media (min-width: $tablet-width) {
     margin-right: -5px;
     margin-left: -5px;
@@ -18,36 +22,47 @@
 // List
 
 .skills__list {
-  margin-left: -10px;
-  margin-right: -10px;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  list-style: none;
 
   @include set-font-style(var(--fz-skills-item), var(--lh-skills-item));
-  @include uppercase;
-
-  @media (min-width: $tablet-width) {
-    margin-right: 5px;
-    margin-left: 5px;
-  }
 }
 
 .skills__item {
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  margin-left: 10px;
-  margin-bottom: 10px;
-  margin-right: 10px;
+  display: flex;
+  padding: 10px;
+  margin: 0 10px 10px;
+  flex-direction: column;
   text-align: center;
+}
+
+// Image 
+
+.skills__image-block {
+  display: flex;
+  min-height: 25px;
+  justify-content: center;
+}
+
+.skills__icon {
+  max-width: 22px;
+  height: auto;
+}
+
+// Name
+
+.skills__name {
+  margin: auto 0 0;
+  text-transform: uppercase;
 }
 
 // Text
 
 .skills__text {
-  margin-bottom: 5px;
+  margin: 0 0 10px;
 
   &:last-child {
     margin-bottom: 0;

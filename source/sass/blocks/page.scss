@@ -1,4 +1,4 @@
-// ===Page===
+// Page
 
 .page {
   min-width: 100%;
@@ -43,14 +43,9 @@
 // Main
 
 .page__main {
-  margin-top: 46px;
-  margin-bottom: 10px;
   grid-row: 2/3;
   grid-column: 1/2;
 
-  @media (min-width: $tablet-width) {
-    margin-top: 10px;
-  }
 }
 
 .page.page--nojs .page__main{
@@ -60,7 +55,6 @@
 // Footer
 
 .page__footer {
-  margin-bottom: 10px;
   grid-row: 3/4;
   grid-column: 1/2;
 }

@@ -1,50 +1,56 @@
 // Slider
 
 .slider {
-  width: calc(100vw - 40px);
+  width: 280px;
 
   @media (min-width: $tablet-width) {
-    width: calc(100vw - 60px);
     display: grid;
+    width: 100%;
     grid-template-rows: repeat(min-content, 3);
     grid-template-columns: min-content 1fr min-content;
   }
+}
 
-  @media (min-width: $desktop-width) {
-    width: 100%;
+// Image block
+
+.slider__image-wrapper {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.slider__image-block {
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 650px;
+    grid-row: 1/2;
+    grid-column: 2/3;
   }
 }
 
 .slider__image-item {
   display: flex;
   justify-content: center;
-}
 
-// Image block
-
-.slider__image-block {
-  text-align: center;
-
-  @media (min-width: $tablet-width) {
-    width: 620px;
-    grid-row: 1/2;
-    grid-column: 2/3;
-  }
 }
 
 // Image
 
 .slider__img {
+  display: block;
   width: 100%;
-  height: 193px;
-  object-fit: contain;
-
-  @media (min-width: $tablet-width) {
-    height: 426px;
-  }
+  height: auto;
+  object-fit: cover;
 }
 
 // Description block
+
+.slider__description-wrapper {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+} 
 
 .slider__description-block {
   width: 100%;
@@ -58,21 +64,26 @@
   }
 }
 
-// Description item
-
 .slider__description-item {
-  min-height: 170px;
   display: flex;
+  min-height: 230px;
   flex-direction: column;
+  list-style: none;
   align-items: center;
 }
 
 // Text block
 
 .slider__text-block {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   min-height: 133px;
   flex: 1 1 auto;
+}
+
+.slider__title {
+  margin: 0 0 20px;
+  font-weight: 400;
+  text-align: center;
 }
 
 // Button
@@ -89,6 +100,9 @@
   @media (min-width: $tablet-width) {
     display: block;
     position: relative;
+    border: none;
+    background-color: transparent;
+    color: var(--cl-bg-contrast);
 
     &::after {
       font-size: var(--fz-swiper-navigation);
@@ -113,7 +127,7 @@
 // Text
 
 .slider__text {
-  margin-bottom: 5px;
+  margin:  0 0 10px;
 
   &:last-child {
     margin-bottom: 0;
@@ -123,9 +137,6 @@
 // Button
 
 .slider__button {
-  padding-top: 5px;
-  padding-right: 15px;
-  padding-bottom: 5px;
-  padding-left: 15px;
-  margin-bottom: 5px;
+  padding: 5px 15px;
+  margin: auto 0 5px;
 }

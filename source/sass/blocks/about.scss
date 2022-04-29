@@ -1,9 +1,7 @@
 // Header
 
 .about__header {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   display: flex;
   align-items: center;
 }
@@ -11,28 +9,29 @@
 // Image block
 
 .about__image-block {
+  margin-right: 20px;
   height: 90px;
   flex: 0 0 90px;
-  border-radius: 50%;
-  overflow: hidden;
 }
 
-// Title block
-
-.about__title-block {
-  margin-left: 20px;
+.about__image-block  img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 // Subtitle
 
 .about__subtitle {
-  margin-bottom: 5px;
+  margin: 0 0 20px;
+  text-align: center;
 }
 
 // Text
 
 .about__text {
-  margin-bottom: 5px;
+  margin: 0 0 10px;
 
   &:last-child {
     margin-bottom: 0;

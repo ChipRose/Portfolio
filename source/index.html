@@ -6,6 +6,9 @@
   <title>Портфолио</title>
   <meta name="description" content="Портфолио Розова ЯС">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="favicon.ico" />
   <link rel="preload" href="fonts/Jost-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/Jost-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
   <link rel="preload" href="fonts/Jost-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -71,7 +74,7 @@
     <section class="skills main__skills">
       <div class="container">
         <a id="skills"></a>
-        <h3 class="title section-subtitle skills__subtitle">Основные навыки</h3>
+        <h3 class="section-subtitle skills__subtitle">Основные навыки</h3>
         <div class="skills__block">
           <ul class="skills__list">
             <li class="skills__item">
@@ -81,7 +84,7 @@
                   <use xlink:href="img/sprite.svg#html-icon"></use>
                 </svg>
               </div>
-              <p>html</p>
+              <p class="skills__name">html</p>
             </li>
             <li class="skills__item">
               <div class="skills__image-block">
@@ -90,7 +93,7 @@
                   <use xlink:href="img/sprite.svg#css-icon"></use>
                 </svg>
               </div>
-              <p>css</p>
+              <p class="skills__name">css</p>
             </li>
             <li class="skills__item">
               <div class="skills__image-block">
@@ -99,7 +102,7 @@
                   <use xlink:href="img/sprite.svg#js-icon"></use>
                 </svg>
               </div>
-              <p>js</p>
+              <p class="skills__name">js</p>
             </li>
             <li class="skills__item">
               <div class="skills__image-block">
@@ -108,7 +111,7 @@
                   <use xlink:href="img/sprite.svg#scss-icon"></use>
                 </svg>
               </div>
-              <p>scss</p>
+              <p class="skills__name">scss</p>
             </li>
           </ul>
           <ul class="skills__list">
@@ -119,7 +122,7 @@
                   <use xlink:href="img/sprite.svg#corel-icon"></use>
                 </svg>
               </div>
-              <p>corel draw</p>
+              <p class="skills__name">corel draw</p>
             </li>
             <li class="skills__item">
               <div class="skills__image-block">
@@ -128,7 +131,7 @@
                   <use xlink:href="img/sprite.svg#figma-icon"></use>
                 </svg>
               </div>
-              <p>figma</p>
+              <p class="skills__name">figma</p>
             </li>
             <li class="skills__item">
               <div class="skills__image-block">
@@ -137,7 +140,7 @@
                   <use xlink:href="img/sprite.svg#ps-icon"></use>
                 </svg>
               </div>
-              <p>photoshop</p>
+              <p class="skills__name">photoshop</p>
             </li>
           </ul>
         </div>
@@ -203,7 +206,7 @@
         </svg>
         +7 960 460 8 234
       </a>
-      <p>
+      <p class="footer__author">
         ©Yana Rozova
       </p>
     </div>
@@ -227,7 +230,7 @@
   <!-- Slide text block template -->
   <template id="slide-text">
     <li class="swiper-slide slider__description-item">
-      <h4 class="title subtitle">Заголовок</h4>
+      <h4 class="slider__title">Заголовок</h4>
       <div class="slider__text-block">
         <p class="slider__text slider__text-anotation">
           Анотация
