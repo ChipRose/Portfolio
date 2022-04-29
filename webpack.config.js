@@ -148,7 +148,3 @@ module.exports = {
     ],
   },
 }
-
-const requireAll = (requireContext) => requireContext.keys().map(requireContext);
-const req = require.context('./../img/icons/', true, /\.svg$/);
-requireAll(req);

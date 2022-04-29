@@ -1,5 +1,6 @@
 import './../sass/style.scss';
 import 'swiper/css/bundle';
+import './sprite.js';
 
 import './burger.js';
 import './slider-settings.js';
