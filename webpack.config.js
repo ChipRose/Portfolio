@@ -113,7 +113,7 @@ module.exports = {
         include: path.resolve(__dirname, 'source/img/icons'),
         use: [
           {
-            loader: 'svg-sprite-loader', 
+            loader: 'svg-sprite-loader',
             options: {
               extract: true,
               spriteFilename: './img/sprite.svg',

@@ -10,9 +10,3 @@ import { renderSlider } from './render-slide.js';
 getSlider.then((slider) => {
   renderSlider(slider);
 });
-
-const requireAllIcons = (r) => {
-  r.keys().forEach(r);
-};
-
-requireAllIcons(require.context('./../img/icons/', true, /\.svg$/));

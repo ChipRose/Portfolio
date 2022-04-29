@@ -11,7 +11,7 @@ const renderSlider = (slider) => {
     const imageItem = slideImageTemplate.cloneNode(true);
     const textItem = slideTextTemplate.cloneNode(true);
     const image = imageItem.querySelector('.slider__img');
-    
+
     imageItem.querySelector('#image-webp-tablet').srcset = slide.previewSrcWebpTablet;
     imageItem.querySelector('#image-webp').srcset = slide.previewSrcWebp;
     imageItem.querySelector('#image-png-tablet').srcset = slide.previewSrcPngTablet;
@@ -29,7 +29,8 @@ const renderSlider = (slider) => {
       link.href = slide.organizationLink;
       link.textContent = slide.organizationName;
       textItem.querySelector('.slider__text-anotation').appendChild(link);
-    };
+    }
+
     textItem.querySelector('.slider__text-description').textContent = slide.text;
     textItem.querySelector('.slider__button').href = slide.link;
     slideTextFragment.appendChild(textItem);

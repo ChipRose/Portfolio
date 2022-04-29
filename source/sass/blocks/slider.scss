@@ -32,7 +32,6 @@
 .slider__image-item {
   display: flex;
   justify-content: center;
-
 }
 
 // Image
@@ -50,7 +49,7 @@
   padding: 0;
   margin: 0;
   list-style: none;
-} 
+}
 
 .slider__description-block {
   width: 100%;
@@ -84,12 +83,6 @@
   margin: 0 0 20px;
   font-weight: 400;
   text-align: center;
-}
-
-// Button
-
-.slider__button {
-  margin-top: auto;
 }
 
 // Navigation
@@ -127,7 +120,7 @@
 // Text
 
 .slider__text {
-  margin:  0 0 10px;
+  margin: 0 0 10px;
 
   &:last-child {
     margin-bottom: 0;

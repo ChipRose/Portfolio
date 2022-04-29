@@ -1,4 +1,4 @@
-@import "global/normalize.scss";
+@import "./../../node_modules/normalize.scss/normalize.scss";
 @import "global/variables.scss";
 @import "global/fonts.scss";
 @import "global/font-size.scss";
@@ -24,7 +24,6 @@
 @import "blocks/subtitle.scss";
 @import "blocks/text-link.scss";
 @import "blocks/button-preview.scss";
-
 @import "blocks/navigation.scss";
 @import "blocks/about.scss";
 @import "blocks/skills.scss";
