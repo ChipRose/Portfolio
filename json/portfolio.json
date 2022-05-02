@@ -10,7 +10,7 @@
     "previewSrc": "img/portfolio/site-pre-keksobooking.png",
     "previewSrcset": "img/portfolio/site-pre-keksobooking@2x.png 2x",
     "previewSrcPngTablet": "img/portfolio/site-pre-cat-tablet.png 1x, img/portfolio/site-pre-cat-tablet@2x.png 2x",
-    "previewSrcWebp": "img/portfolio/site-pre-keksobooking.webp 1x, img/portfolio/site-pre-keksobooking.webp 2x",
+    "previewSrcWebp": "img/portfolio/site-pre-keksobooking.webp 1x, img/portfolio/site-pre-keksobooking@2x.webp 2x",
     "previewSrcWebpTablet": "img/portfolio/site-pre-keksobooking-tablet.webp 1x, img/portfolio/site-pre-keksobooking-tablet@2x.webp 2x",
     "previewAlt": "Демонстрация сайта Kekesobooking"
   },
