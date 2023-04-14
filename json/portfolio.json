@@ -1,6 +1,36 @@
 [
   {
     "id": 1,
+    "title": "SPA ДЛЯ ИНТЕРНЕТ-МАГАЗИНА «ФЕРМЕРСКИЕ ПРОДУКТЫ»",
+    "anotation": "Реализовано в процессе обучения React-разработке в ",
+    "text": "Приложение написано на React JS, styled-components.  Имеет слайдер с каталогом, форму выбора и заказа продукции, табы.",
+    "link": "https://chiprose.github.io/farm-products/",
+    "organizationLink": "https://htmlacademy.ru/",
+    "organizationName": "HTML Academy",
+    "previewSrc": "img/portfolio/site-pre-farm.png",
+    "previewSrcset": "img/portfolio/site-pre-farm@2x.png 2x",
+    "previewSrcPngTablet": "img/portfolio/site-pre-farm-tablet.png 1x, img/portfolio/site-pre-farm-tablet@2x.png 2x",
+    "previewSrcWebp": "img/portfolio/site-pre-farm.webp 1x, img/portfolio/site-pre-farm@2x.webp 2x",
+    "previewSrcWebpTablet": "img/portfolio/site-pre-farm-tablet.webp 1x, img/portfolio/site-pre-farm-tablet@2x.webp 2x",
+    "previewAlt": "Демонстрация сайта Фермерские продукты"
+  },
+  {
+    "id": 2,
+    "title": "SPA ДЛЯ «КОТОКАФЕ»",
+    "anotation": "Реализован в процессе обучения React-разработке в ",
+    "text": "Приложение написано на React JS, styled-components.  Имеет слайдер с фотогалереей, форму покупки билетов, имитацию добавления нового персонажа, аккордионы.",
+    "link": "https://chiprose.github.io/cat-cafe/",
+    "organizationLink": "https://htmlacademy.ru/",
+    "organizationName": "HTML Academy",
+    "previewSrc": "img/portfolio/site-pre-cafe.png",
+    "previewSrcset": "img/portfolio/site-pre-cafe@2x.png 2x",
+    "previewSrcPngTablet": "img/portfolio/site-pre-cafe-tablet.png 1x, img/portfolio/site-pre-cafe-tablet@2x.png 2x",
+    "previewSrcWebp": "img/portfolio/site-pre-cafe.webp 1x, img/portfolio/site-pre-cafe@2x.webp 2x",
+    "previewSrcWebpTablet": "img/portfolio/site-pre-cafe-tablet.webp 1x, img/portfolio/site-pre-cafe-tablet@2x.webp 2x",
+    "previewAlt": "Демонстрация сайта Котокафе"
+  },
+  {
+    "id": 3,
     "title": "САЙТ ДЛЯ СЕРВИСА «KEKSOBOOKING»",
     "anotation": "Реализован в процессе обучения на курсе «JavaScript. Профессиональная разработка веб-интерфейсов» в ",
     "text": "Использует данные полученный с сервера. Реализована возможность фильтрации объявлений, осуществляется валидация формы. Использованы библиотеки leaflet, lodash. Сборка проекта реализована с помощью webpack.",
@@ -15,7 +45,7 @@
     "previewAlt": "Демонстрация сайта Kekesobooking"
   },
   {
-    "id": 2,
+    "id": 4,
     "title": "САЙТ ДЛЯ ИНТЕРНЕТ-МАГАЗИНА «CAT ENERGY»",
     "anotation": "Реализован в процессе обучения на курсе адаптивной вёрстки и автоматизации в ",
     "text": "Адаптивен для разных устройств, адаптивная и оптимизированная графика, svg, спрайт. Использованы Flex, Grid, препроцессор SCSS, сборщик Gulp. Имеет меню-бургер, слайдер.",
@@ -30,7 +60,7 @@
     "previewAlt": "Демонстрация сайта Cat Energy"
   },
   {
-    "id": 3,
+    "id": 5,
     "title": "САЙТ ДЛЯ ИНТЕРНЕТ-МАГАЗИНА «ТЕХНОМАРТ»",
     "anotation": "Реализован в процессе обучения на курсе профессиональной вёрстки в ",
     "text": "Использованы Grid, Flex. Проходит проверку переполнения контентом. Имеет модальные окна, слайдеры, работающие на JS и CSS. Реализована доступность для скринридеров.",
@@ -45,20 +75,20 @@
     "previewAlt": "Демонстрация сайта Техномарт"
   },
   {
-    "id": 4,
+    "id": 6,
     "title": "страница подбора квартир «ГК железно»",
     "anotation": "Тестовое задание",
     "text": "Получает данные из json-файла. Поддерживает поиск квартир по заданным параметрам и сортировку. Реализует разные способы фильтрации. Использованы библиотеки swiper, noUiSlider, lodash. Сборка проекта реализована с помощью webpack.",
     "link": "https://chiprose.github.io/cg-jelezno/",
     "previewSrc": "img/portfolio/site-pre-playtennis.png",
-    "previewSrcset": "img/portfolio/site-pre-playtennis.png 2x",
+    "previewSrcset": "img/portfolio/site-pre-playtennis@2x.png 2x",
     "previewSrcPngTablet": "img/portfolio/site-pre-jelezno.png 1x, img/portfolio/site-pre-jelezno-tablet@2x.png 2x",
     "previewSrcWebp": "img/portfolio/site-pre-jelezno.webp 1x, img/portfolio/site-pre-jelezno@2x.webp 2x",
     "previewSrcWebpTablet": "img/portfolio/site-pre-jelezno-tablet.webp 1x, img/portfolio/site-pre-jelezno-tablet@2x.webp 2x",
     "previewAlt": "Демонстрация страницы ГК Железно"
   },
   {
-    "id": 5,
+    "id": 7,
     "title": "САЙТ ДЛЯ ТЕННИСНОГО КЛУБА «PLAY ТЕННИС»",
     "anotation": "Реализован по собственному проекту.",
     "text": "Адаптивен для разных устройств. Использованы Flex. Имеет меню-бургер, слайдер с фотогалереей, спойлеры, табы.",
