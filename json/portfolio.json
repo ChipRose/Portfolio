@@ -3,7 +3,7 @@
     "id": 1,
     "title": "SPA ДЛЯ ИНТЕРНЕТ-МАГАЗИНА «ФЕРМЕРСКИЕ ПРОДУКТЫ»",
     "anotation": "Реализовано в процессе обучения React-разработке в ",
-    "text": "Приложение написано на React JS, styled-components.  Имеет слайдер с каталогом, форму выбора и заказа продукции, табы.",
+    "text": "Приложение написано на React JS, styled components.  Имеет слайдер с каталогом, форму выбора и заказа продукции, табы.",
     "link": "https://chiprose.github.io/farm-products/",
     "organizationLink": "https://htmlacademy.ru/",
     "organizationName": "HTML Academy",
