@@ -57,6 +57,8 @@ const plugins = () => {
         { from: path.resolve(__dirname, 'source/fonts'), to: 'fonts' },
         { from: path.resolve(__dirname, 'source/json'), to: 'json' },
         { from: path.resolve(__dirname, 'source/img'), to: 'img' },
+        { from: path.resolve(__dirname, 'source/manifest.webmanifest'), to: '' },
+        { from: path.resolve(__dirname, 'source/favicon.ico'), to: '' },
       ],
     }),
     new HTMLPlugin({
