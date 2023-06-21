@@ -15,6 +15,7 @@ const mainSliderOptions = {
     clickable: true,
   },
   loop: true,
+  slidesPerView: 1,
   spaceBetween: 10,
 };
 
@@ -22,6 +23,7 @@ const mainSlider = new Swiper(mainSliderSelector, mainSliderOptions);
 
 const navSliderOptions = {
   loop: true,
+  slidesPerView: 1,
   spaceBetween: 10,
 };
 
