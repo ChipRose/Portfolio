@@ -6,7 +6,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     width: 100%;
-    grid-template-rows: repeat(min-content, 3);
+    grid-template-rows: repeat(3, min-content);
     grid-template-columns: min-content 1fr min-content;
   }
 }
