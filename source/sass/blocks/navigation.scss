@@ -117,7 +117,7 @@
 
 .navigation__list {
   padding: 10px 0;
-  margin: 0;
+  margin: 70px 0 0;
   width: 100%;
   min-height: 100px;
   box-sizing: border-box;
@@ -129,6 +129,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    margin: 0;
     width: 100%;
     min-height: 0;
     display: flex;
